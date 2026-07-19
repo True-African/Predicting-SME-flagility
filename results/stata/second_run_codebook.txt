@@ -1,0 +1,31 @@
+Second-run raw-data codebook excerpt
+Rows: 358
+Columns: 356
+
+Key variables:
+- h1: New Products/Services Introduced Over Last 3 Yrs
+  value labels: {1.0: 'Yes', 2.0: 'No', -9.0: "Don't know (spontaneous)"}
+- h2: New Products/Services Also New For Thr Establishment'S Main Market
+  value labels: {1.0: 'Yes', 2.0: 'No', -9.0: "Don't know (spontaneous)"}
+- h5: During Last 3 Yrs, Establishment Introduced New/Significantly Improved Process
+  value labels: {1.0: 'Yes', 2.0: 'No', -9.0: "Don't know (spontaneous)"}
+- c22b: Establishment Has Its Own Website
+  value labels: {1.0: 'Yes', 2.0: 'No', -9.0: "Don't know (spontaneous)"}
+- l1: Num. Permanent, Full-Time Employees At End of Last Fiscal Year
+- wmedian: Weight according to median eligibility
+- wstrict: Weight according to strict eligibility
+- wweak: Weight according to weak eligibility
+- a2: Sampling Region
+  value labels: {1.0: 'Kigali', 2.0: 'Western and Northern', 3.0: 'Southern and Eastern'}
+- a3a: Region of The Establishment
+  value labels: {1.0: 'Kigali', 2.0: 'Western and Northern', 3.0: 'Southern and Eastern'}
+- a4a: Industry Sampling Sector
+  value labels: {1.0: 'Manufacturing', 2.0: 'Retail', 3.0: 'Other Services'}
+- a6a: Sampling Size
+  value labels: {1.0: 'Small', 2.0: 'Medium', 3.0: 'Large'}
+- k82: Establishment Has A Line of Credit or Loan From A Financial Institution?
+- k162: In Last FY, Did Establishment Apply For New Loans/Lines of Credit?
+- k3a: % of Working Capital Financed From Internal Funds/Retained Earnings
+- k3bc: % of Working Capital Borrowed From Banks
+- k33: Percentage of payments received using e-payments
+- b6: Number of Full-Time Employees of The Establishment When It Started Operations

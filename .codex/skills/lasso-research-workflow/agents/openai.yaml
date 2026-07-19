@@ -1,0 +1,3 @@
+display_name: LASSO Research Workflow
+short_description: Audit and preserve LASSO research.
+default_prompt: Use the LASSO research workflow to audit data, regenerate analysis outputs, update manuscripts, and prepare a safe reproducible backup.

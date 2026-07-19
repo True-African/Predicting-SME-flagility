@@ -1,0 +1,139 @@
+\documentclass[man,12pt,floatsintext]{apa7}
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber,sortcites=true,sorting=nyt]{biblatex}
+\addbibresource{../paper_1/references.bib}
+\let\citep\parencite
+
+\title{From Sample Prediction to Population Screening: Weighted Estimates of Formal Small and Medium-Sized Enterprise Fragility in Rwanda}
+\shorttitle{Weighted SME Fragility Estimates}
+\authorsnames{Stanley Mukasa, Simeon Nsabiyumva}
+\authorsaffiliations{{Carnegie Mellon University Africa and African Leadership University}}
+\authornote{Draft manuscript generated from the organized LASSO research project.}
+\abstract{This paper extends the Rwanda small and medium-sized enterprise (SME) fragility project from sample-level prediction to population-oriented screening. Using the 2023 Rwanda Enterprise Survey and the recovered firm-level fragility rule from Paper 1, we compare unweighted fragility prevalence with three World Bank Enterprise Survey weight specifications. A second run from the raw Stata file confirms that the unweighted sample estimate classifies 17.3 percent of firms as fragile. Weighted estimates are higher, ranging from 20.9 to 21.6 percent depending on the weight used. The results show that sample-level summaries understate formal-firm fragility relative to the weighted enterprise-survey frame. Region, sector, and firm-size decompositions further suggest that weighted fragility estimates can guide more credible policy targeting than unweighted counts alone. The paper is methodological and policy-oriented: it does not estimate causal effects, but demonstrates why survey design must be incorporated before using predictive fragility tools for national SME policy.}
+\keywords{small and medium-sized enterprise fragility, survey weights, Rwanda, Enterprise Survey, policy targeting, formal firms}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Paper 1 developed and audited a predictive fragility-screening framework for formal firms in Rwanda. That analysis was intentionally firm-level and reproducible, but its headline prevalence was based on the observed sample. For national policy, sample prevalence is insufficient because sampled firms do not contribute equally to population-level inference. Enterprise surveys use stratification and weights to address this problem \citep{worldbank2025rwanda}. This paper asks a narrower but policy-important question: how does estimated formal-firm fragility change when World Bank Enterprise Survey weights are applied?
+
+The question matters for both methods and policy. SME research shows that smaller firms face persistent constraints in finance, infrastructure, information, and market access \citep{ayyagari2007small, beck2006small, amadasun2022finance}. Resilience research further argues that firms differ in their ability to anticipate, absorb, and adapt to disruption \citep{duchek2020organizational, lengnickhall2005adaptive, teece1997dynamic}. A fragility-screening tool may therefore be useful for identifying firms with weaker adaptive capacity, but only if researchers clearly distinguish sample classification from population interpretation.
+
+\section{Literature and Contribution}
+
+This paper sits at the intersection of SME vulnerability, digital and financial adaptation, and survey-based policy inference. Recent studies show that digital tools can support SME continuity, customer engagement, innovation, and crisis response, while also requiring complementary finance, skills, and organizational learning \citep{awad2024digital, guo2020digitalization, lestari2024business, martinrojas2026resilience, mishrif2023technology, papadopoulos2020digital, robertson2022digitalmaturity, sagala2024antifragility, sagala2024toward, sinha2025digitalisation}. These findings are especially relevant in emerging markets, where institutional voids and uneven infrastructure can shape which firms benefit from digital transformation \citep{khanna1997why}.
+
+Methodologically, the broader project uses penalized prediction to audit a fragility classification. Least absolute shrinkage and selection operator (LASSO) regression is valuable because it imposes sparsity when many covariates are plausible, and modern implementations make regularized models accessible in both Python and Stata \citep{ahrens2020lassopack, friedman2010regularization, hastie2015sparsity, tibshirani1996regression}. Yet predictive accuracy does not imply causality, and model validation must be separated from policy interpretation \citep{arlot2010crossvalidation, athey2019machine, kleinberg2018human, mullainathan2017machine, shmueli2010explain}. The contribution of this paper is therefore deliberately modest: it shows how survey weights change the descriptive prevalence implied by the screening rule. This is a necessary step before using the classifier for national SME policy.
+
+The paper also clarifies the frame of inference. The World Bank Enterprise Survey covers formal firms within its survey universe, not Rwanda's full enterprise population. National Institute of Statistics of Rwanda sources show that the broader business landscape includes a much larger informal-enterprise sector \citep{nisr2024establishment, nisr2025ibes}. Thus, the estimates here should be read as weighted estimates for the formal-firm survey frame, not as population estimates for all Rwandan businesses.
+
+\section{Data and Method}
+
+The analysis uses the Rwanda 2023 Enterprise Survey raw file and the recovered fragility classification from the LASSO project \citep{worldbank2025rwanda}. The outcome is the same binary \texttt{fragility\_risk\_flex} used in Paper 1. A second run through the installed Stata workflow and the reproducible Python audit confirms that the recovered rule exactly matches the processed classification: 62 of 358 firms are classified as fragile, with no mismatches.
+
+We estimate prevalence four ways: unweighted, weighted by \texttt{wmedian}, weighted by \texttt{wstrict}, and weighted by \texttt{wweak}. We also decompose weighted fragility by region, sector, firm size, website status, and process-innovation status. For each group $g$ and weight $w_i$, weighted fragility prevalence is:
+
+\[
+\hat{P}_g = 100 \times \frac{\sum_{i \in g} w_i Y_i}{\sum_{i \in g} w_i},
+\]
+
+where $Y_i$ equals one when firm $i$ is classified as fragile.
+
+\section{Results}
+
+Table~\ref{tab:prevalence} below shows that the unweighted sample estimate is 17.3 percent, while weighted estimates range from 20.9 to 21.6 percent. The difference is substantively important. If the classifier is interpreted for the formal-firm survey frame, the weighted estimates imply that approximately one-fifth of firms are classified as fragile. The table contributes to the topic by showing that policy interpretation changes when survey design is incorporated.
+
+\begin{table}[H]
+\centering
+\caption{Fragility Prevalence by Weighting Approach}
+\label{tab:prevalence}
+\input{../../results/tables/second_run_weighted_prevalence.tex}
+\end{table}
+
+Figure~\ref{fig:prevalence} below visualizes the same contrast. As shown in Figure~\ref{fig:prevalence}, all three weighted estimates are higher than the unweighted estimate. This pattern means that firms with higher survey weights have a higher average probability of being classified as fragile under the recovered rule. The figure therefore helps translate the table into a policy message: unweighted summaries may understate fragility in the formal-firm frame.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\linewidth]{../../results/figures/second_run/weighted_unweighted_prevalence.png}
+\caption{Formal-firm fragility prevalence by weighting approach}
+\label{fig:prevalence}
+\end{figure}
+
+\section{Regional, Sectoral, and Size Patterns}
+
+Weighted decompositions indicate where the screening framework should be interpreted cautiously. Region-level estimates are useful for spatial targeting, sector estimates connect the index to industrial and service-policy priorities, and firm-size estimates identify whether fragility is concentrated among smaller firms or spread across the formal enterprise distribution.
+
+\begin{table}[H]
+\centering
+\caption{Weighted Fragility by Region}
+\label{tab:region}
+\resizebox{\textwidth}{!}{\input{../../results/tables/second_run_region_table.tex}}
+\end{table}
+
+Table~\ref{tab:region} above shows that weighted fragility is lowest in Kigali and highest in the Southern and Eastern stratum. The regional gradient is large: the weighted estimate for Southern and Eastern firms is close to 40 percent, while Kigali is approximately 11 percent. This table contributes to the research question by showing that national averages can conceal substantial spatial variation within the formal-firm frame. The pattern should motivate spatial analysis, but it should not be interpreted as a causal regional effect.
+
+Figure~\ref{fig:region} below presents the same regional pattern visually. As shown in Figure~\ref{fig:region}, Kigali is clearly separated from the other regional strata. This visual evidence strengthens the case for a future spatial-inequality paper because it identifies where additional district-level infrastructure, market-access, and administrative data would be most relevant.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\linewidth]{../../results/figures/second_run/fragility_by_region.png}
+\caption{Weighted fragility by region using \texttt{wmedian}}
+\label{fig:region}
+\end{figure}
+
+Table~\ref{tab:sector} below reports weighted fragility by sector. Other services have the highest weighted fragility estimate, manufacturing occupies an intermediate position, and retail has the lowest estimate. This sectoral ordering matters for interpretation because the fragility measure is not evenly distributed across the formal economy. It suggests that future industrial-policy analysis should examine whether service-sector fragility reflects market volatility, weaker digital capability, thinner financial buffers, or the specific construction of the recovered outcome rule.
+
+\begin{table}[H]
+\centering
+\caption{Weighted Fragility by Sector}
+\label{tab:sector}
+\resizebox{\textwidth}{!}{\input{../../results/tables/second_run_sector_table.tex}}
+\end{table}
+
+Figure~\ref{fig:sector} below visualizes the sector decomposition. As shown in Figure~\ref{fig:sector}, the weighted sector gap is smaller than the regional gap, but it remains relevant for policy design. The figure helps show that a single national estimate should not be used as the only basis for sector-specific support.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\linewidth]{../../results/figures/second_run/fragility_by_sector.png}
+\caption{Weighted fragility by sector using \texttt{wmedian}}
+\label{fig:sector}
+\end{figure}
+
+Table~\ref{tab:size} below reports weighted fragility by firm size. Small firms have the highest weighted fragility estimate, medium firms have the lowest estimate, and large firms fall between these groups once survey weights are applied. This finding is consistent with the broader SME literature on small-firm vulnerability, but it remains descriptive. The table contributes to the paper by showing that firm size is an important dimension for interpreting weighted screening results.
+
+\begin{table}[H]
+\centering
+\caption{Weighted Fragility by Firm Size}
+\label{tab:size}
+\resizebox{\textwidth}{!}{\input{../../results/tables/second_run_size_table.tex}}
+\end{table}
+
+Figure~\ref{fig:size} below presents the firm-size pattern graphically. As shown in Figure~\ref{fig:size}, the small-firm bar is higher than the medium-firm bar, which supports the interpretation that formal small firms require particular attention in resilience-oriented policy. The figure also shows why the large-firm estimate should be interpreted cautiously: the large-firm group is smaller in the sample, so future work should report design-based uncertainty intervals.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\linewidth]{../../results/figures/second_run/fragility_by_size.png}
+\caption{Weighted fragility by firm size using \texttt{wmedian}}
+\label{fig:size}
+\end{figure}
+
+\section{Discussion}
+
+The central finding is that applying survey weights increases the estimated prevalence of fragility among formal firms. This does not invalidate the sample-level model. Rather, it clarifies the boundary between predictive classification and population inference. A screening model intended for policy use should report both unweighted model diagnostics and weighted descriptive implications.
+
+The analysis also strengthens the argument for future external-data integration. Combining the WBES formal-firm frame with Rwanda's Establishment Census and Integrated Business Enterprise Survey would allow the project to show what formal-firm surveys miss about informal and microenterprise fragility \citep{nisr2024establishment, nisr2025ibes}. Adding district boundaries, digital infrastructure, mobile-money access, electricity, roads, and nightlights would support a separate spatial inequality paper.
+
+\section{Conclusion}
+
+Weighted analysis should become part of the main Rwanda SME fragility research program. The current evidence suggests that national formal-firm fragility is closer to 21 percent than 17 percent. Future work should compute design-based standard errors, validate the recovered fragility rule against independent outcomes, and extend the analysis spatially using district-level administrative or geospatial data.
+
+\printbibliography
+
+\end{document}

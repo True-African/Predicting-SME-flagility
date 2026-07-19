@@ -1,0 +1,14 @@
+feature,coefficient,abs_coefficient
+num__digital_platform_difficulty,2.2189094577185813,2.2189094577185813
+num__revenue_volatility,1.93391050601093,1.93391050601093
+num__change_permanent_employment,0.5292059381620042,0.5292059381620042
+num__change_temporary_employment,-0.2891380070019564,0.2891380070019564
+num__external_finance_assets,0.11623476408357925,0.11623476408357925
+num__internet_for_business,0.0,0.0
+num__capacity_utilization_change,0.0,0.0
+num__delayed_client_payments,0.0,0.0
+num__late_supplier_payments,0.0,0.0
+num__ecommerce_share,0.0,0.0
+num__sector,0.0,0.0
+num__firm_size,0.0,0.0
+num__manager_experience_years,0.0,0.0

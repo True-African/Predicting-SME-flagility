@@ -1,0 +1,109 @@
+\section{Data, Measurement, and Construct Validity}
+
+\subsection{Data}
+
+The study uses the Rwanda 2023 Enterprise Survey raw Stata file and curated predictor files provided in the project folder \citep{worldbank2025rwanda}. The raw file was converted to CSV, variable labels were extracted, and the analysis was rerun from the original `.dta' file using both Python and Stata. The reproducible analysis dataset contains 358 formal-firm observations, a recovered binary fragility classification, predicted probabilities from the legacy classification export, and thirteen firm-level predictors. The inference frame is the formal-firm Enterprise Survey universe. The data do not represent all Rwandan SMEs, informal enterprises, microenterprises, or firms below the Enterprise Survey eligibility threshold.
+
+\subsection{Outcome Reconstruction}
+
+The dependent variable is \texttt{fragility\_risk\_flex}. It equals one for firms classified as fragile by the legacy export and zero otherwise. We recovered the deterministic rule behind this classification by auditing the converted raw CSV and then rerunning the reconstruction from the raw Stata file. Let $Y_i$ denote the recovered fragility classification. Using the raw survey codes, the current operative rule is:
+
+\begin{equation}
+Y_i =
+I
+\left[
+\begin{array}{l}
+(h5_i = 1 \land l1_i \leq 3) \ \lor \\
+(h5_i = 2 \land c22b_i = 1 \land l1_i \leq -2) \ \lor \\
+(h5_i = 2 \land c22b_i = 2 \land (h1_i = 2 \lor h2_i \neq 1))
+\end{array}
+\right].
+\end{equation}
+
+The rule classifies 62 firms as fragile and 296 as non-fragile. It reproduces all 358 classifications with no mismatches. This is an important transparency gain, but it also means the dependent variable is a constructed screening index rather than an observed event such as closure, bankruptcy, revenue decline, or survival duration.
+
+In the outcome-rule equation, $Y_i$ is the binary fragility classification for firm $i$, where $Y_i = 1$ means that firm $i$ is classified as fragile and $Y_i = 0$ means that it is not classified as fragile. The expression $I[\cdot]$ is an indicator function: it takes the value 1 when the condition inside the brackets is true and 0 when the condition is false. The symbol $i$ indexes firms. The logical connector $\land$ means ``and,'' while $\lor$ means ``or.'' For the binary rule variables, the raw World Bank Enterprise Survey coding is interpreted as 1 = Yes and 2 = No. Thus, \texttt{h5 = 1} means the establishment introduced a new or significantly improved process, \texttt{c22b = 1} means the establishment has its own website, and \texttt{h1 = 2} or \texttt{h2 = 2} indicate negative responses to the corresponding product/service innovation questions. The employment condition uses \texttt{l1}, the number of permanent full-time employees at the end of the last fiscal year. The recovered rule is reported exactly as found in the legacy classification logic, including the unusual \texttt{l1 <= -2} branch. In the observed data this branch does not change the final reconstruction; it remains in the equation to preserve transparency and to avoid silently rewriting the legacy export. Nonresponse codes such as don't know, refusal, or not applicable were not recoded into substantive categories for the rule reconstruction; where present, they are treated according to the numeric values in the raw file and flagged as a validation issue for future questionnaire-level review.
+
+\subsection{Construct Validity and Variable-Label Audit}
+
+Table~\ref{tab:construct_audit} below reports the variable-label audit. The official Stata labels identify $h1$ and $h2$ as product/service innovation variables, $h5$ as process innovation, $c22b$ as website status, and $l1$ as permanent full-time employment. Earlier project drafts describe $h5$ as revenue volatility and $c22b$ as digital-platform difficulty. The official labels are treated as authoritative in this manuscript. Therefore, the paper avoids strong claims about revenue volatility or digital-platform difficulty unless those terms are explicitly identified as legacy labels requiring further documentation.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\input{../../results/tables/paper1_construct_validity_audit.tex}
+\normalsize
+
+The implication of Table~\ref{tab:construct_audit} is that the construct should be described as a fragility-screening classification built from innovation, digital-presence, and employment-size variables. It should not be described as a direct measure of financial distress, revenue volatility, or digital-platform difficulty unless the research team later supplies a defensible recoding from the original questionnaire or Stata workflow.
+
+\subsection{Alternative Fragility Index Logic}
+
+The Word draft preserved in the project archive gives a broader mathematical rationale for a possible finance-digital fragility index. Let $F_i$ denote firm $i$'s financial-access score, $D_i$ its digital-presence score, and $E_i$ its e-commerce-adoption score, with each component scaled to the interval $[0,1]$. The draft logic defines risk flags as:
+
+\begin{align}
+R^{F}_i &= I(F_i < 0.25),\\
+R^{D}_i &= I(D_i < 0.30),\\
+R^{E}_i &= I(E_i < 0.10).
+\end{align}
+
+In these risk-flag equations, $R^{F}_i$, $R^{D}_i$, and $R^{E}_i$ are binary risk flags for firm $i$. They equal 1 when the firm's financial-access, digital-presence, or e-commerce-adoption score falls below the stated threshold, and 0 otherwise. The superscripts $F$, $D$, and $E$ refer to finance, digital presence, and e-commerce, respectively. The thresholds 0.25, 0.30, and 0.10 come from the archived Word-draft logic and are not estimated from the current data.
+
+The binary Fragility Risk Index is then:
+
+\begin{equation}
+\text{Fragility}_i =
+I\left[
+(R^{F}_i R^{D}_i) + (R^{F}_i R^{E}_i) + (R^{D}_i R^{E}_i) \geq 1
+\right].
+\end{equation}
+
+In this alternative-index equation, $\text{Fragility}_i$ is the alternative binary fragility index for firm $i$. The products $R^{F}_iR^{D}_i$, $R^{F}_iR^{E}_i$, and $R^{D}_iR^{E}_i$ identify whether the firm is simultaneously flagged in at least two of the three domains. The condition $\geq 1$ therefore means that a firm is classified as fragile when any two-domain combination of finance, digital-presence, and e-commerce risk is present.
+
+This alternative rule is theoretically consistent with a finance-digital capability view of fragility, but the notebook shows that it classifies 104 firms as fragile and agrees with the supplied outcome in 76.5 percent of cases. It is therefore reported as a candidate robustness extension, not as the operative dependent-variable definition.
+
+\subsection{Predictors and Leakage Map}
+
+Predictors include innovation indicators, employment, temporary employment change, capacity utilization, internet use for business, finance indicators, payment-delay variables, website/digital-presence indicators, e-payment share, sector, firm size, and managerial experience. Table~\ref{tab:leakage_map} below separates variables used in the outcome rule from variables submitted as predictors. Four rule variables, \texttt{h1}, \texttt{h2}, \texttt{h5}, and \texttt{c22b}, also appear in the predictor set. This creates high leakage risk for the full model. The full model is therefore interpreted as screening-rule replication, while the leakage-reduced model is treated as the more substantive benchmark for independent predictive signal.
+
+\begin{table}[H]
+\centering
+\caption{Outcome-Rule and Predictor Leakage Map}
+\label{tab:leakage_map}
+\small
+\input{../../results/tables/paper1_predictor_leakage_map.tex}
+\end{table}
+\normalsize
+
+Table~\ref{tab:predictor_dictionary} below documents the full predictor set used in the screening models. This dictionary is necessary because several short Enterprise Survey codes are not self-interpreting. It also clarifies which variables enter both the full and leakage-reduced specifications and how binary 1/2 coding should be read.
+
+\small
+\setlength{\tabcolsep}{3pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\input{../../results/tables/paper1_predictor_dictionary.tex}
+\normalsize
+
+\subsection{Empirical Strategy}
+
+The primary model is a cross-validated L1-penalized logistic regression, commonly known as least absolute shrinkage and selection operator (LASSO) logistic regression. LASSO is appropriate here because the analysis contains multiple plausible firm-level predictors, a modest sample size, and a need for an interpretable screening model. LASSO shrinks weak predictors toward zero while retaining a smaller set of variables with predictive value, making it useful when the research objective is sparse prediction rather than causal parameter estimation \citep{tibshirani1996regression, friedman2010regularization, hastie2015sparsity}. Five-fold cross-validation selects the penalty level, reducing dependence on a single arbitrary tuning choice \citep{arlot2010crossvalidation, ahrens2020lassopack}.
+
+Formally, the estimator solves the penalized logistic objective
+\begin{equation}
+\hat{\beta} =
+\arg\min_{\beta}
+\left[
+-\ell(\beta; y, X) + \lambda \sum_{j=1}^{p} |\beta_j|
+\right],
+\end{equation}
+where $\hat{\beta}$ is the vector of estimated model coefficients after penalization, and $\beta$ is a candidate vector of coefficients considered during estimation. The notation $\arg\min_{\beta}$ means ``the value of $\beta$ that minimizes'' the expression that follows. In practical terms, the model chooses the coefficient vector that gives the best penalized fit to the training data. The term $\ell(\beta; y, X)$ is the logistic log-likelihood, which measures how well the coefficients $\beta$ predict the observed outcome vector $y$ from the predictor matrix $X$. Here, $y$ contains the binary fragility classifications and $X$ contains the preprocessed firm-level predictors. The minus sign before $\ell(\beta; y, X)$ appears because the estimator is written as a minimization problem: minimizing the negative log-likelihood is equivalent to maximizing the log-likelihood. The parameter $\lambda$ is the nonnegative penalty level selected by five-fold cross-validation within the training data. Larger values of $\lambda$ impose stronger shrinkage. The summation $\sum_{j=1}^{p} |\beta_j|$ is the L1 penalty, where $j$ indexes predictors, $p$ is the total number of predictors, and $|\beta_j|$ is the absolute value of the coefficient for predictor $j$. Numeric predictors are standardized before estimation; reported coefficients are therefore penalized standardized coefficients from the fitted LASSO pipeline rather than post-LASSO unpenalized logit estimates. Because \texttt{class\_weight = balanced} is used to improve minority-class detection, the predicted scores should be interpreted primarily as rankings unless recalibrated and externally validated.
+
+The workflow uses a stratified 75/25 train-test split with random seed 42. Numeric features are median-imputed and standardized inside the training pipeline. Logistic regression is estimated with class balancing through \texttt{class\_weight = balanced}. The main held-out test set contains 90 firms, including 16 fragility-classified firms. Predictive performance is evaluated with accuracy, precision, recall, specificity, the area under the receiver operating characteristic curve (ROC-AUC), the area under the precision-recall curve (PR-AUC), Brier score, calibration plots, threshold sensitivity, and bootstrap confidence intervals for ROC-AUC and PR-AUC.
+
+Two model specifications are reported. The full model includes all curated predictors and is interpreted as a replication audit of the screening rule. The leakage-reduced model excludes the rule variables available in the predictor file: \texttt{h1}, \texttt{h2}, \texttt{h5}, and \texttt{c22b}. This second model asks whether other firm characteristics carry predictive information beyond the mechanics of the recovered rule. A complete-case audit is also generated: the leakage-reduced predictor set retains 347 of 358 observations before imputation, including 61 fragility-classified firms.
+
+The analysis is not designed for causal inference. Coefficients are interpreted as predictive weights conditional on the model specification and data-generating workflow. Before policy deployment, the recovered classification should be validated against independent outcomes such as firm exit, revenue decline, employment contraction, or follow-up survival status.
+
+\subsection{Reproducibility and Code Availability}
+
+The analysis workflow is documented in the project reproducibility guide and implemented in the cleaned notebook and second-run scripts. The key reproducibility settings are the Rwanda 2023 Enterprise Survey raw data source, the recovered classification rule above, the curated predictor dictionary in Table~\ref{tab:predictor_dictionary}, median imputation for numeric variables, standardization inside the training pipeline, a stratified 75/25 train-test split, random seed 42, five-fold cross-validation for the LASSO penalty, and class-balanced logistic estimation. The manuscript tables and figures are generated from the project results folders rather than entered manually. This design allows the screening-rule reconstruction, leakage-reduced benchmark, calibration diagnostics, and threshold analysis to be rerun when updated data or external validation outcomes become available.

@@ -1,0 +1,2 @@
+roc_auc,roc_auc_ci_low,roc_auc_ci_high,pr_auc,pr_auc_ci_low,pr_auc_ci_high,brier_score,test_n,test_fragile_n
+0.9784628378378378,0.9294575738550647,1.0,0.9523692810457516,0.8479278553526673,1.0,0.03762800395716718,90,16

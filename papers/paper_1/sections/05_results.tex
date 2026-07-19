@@ -1,0 +1,132 @@
+\section{Results}
+
+\subsection{Sample Profile and Outcome Reconstruction}
+
+Table~\ref{tab:sample} below reports the core sample structure. The study includes 358 formal firms, of which 62 are fragility-classified and 296 are not fragility-classified. The resulting prevalence is 17.3 percent. This table defines the empirical scale of the study: the analysis audits a formal-firm screening outcome within the Enterprise Survey sample, not all enterprises in Rwanda.
+
+\begin{table}[H]
+\centering
+\caption{Sample Summary}
+\label{tab:sample}
+\input{../../results/tables/table_1_sample_summary.tex}
+\end{table}
+
+Table~\ref{tab:second_validation} below reports the second-run validation of the recovered rule. The reconstructed rule matches the supplied processed outcome for all 358 observations, with no mismatches. This result is foundational for the paper because it removes dependence on an unexplained legacy export and makes the dependent variable auditable.
+
+\begin{table}[H]
+\centering
+\caption{Second-Run Fragility Rule Validation}
+\label{tab:second_validation}
+\input{../../results/tables/second_run_fragility_validation_summary.tex}
+\end{table}
+
+Table~\ref{tab:profile} below compares fragility-classified and non-fragility-classified firms using the curated legacy analysis dataset. The table shows large differences in the variables originally labelled as revenue volatility and digital difficulty, and in mean predicted probability. However, the official Stata labels show that the corresponding raw variables are process innovation and website status. The contribution of Table~\ref{tab:profile} is therefore diagnostic: it demonstrates why legacy labels must be reconciled with official survey metadata before substantive claims are made.
+
+\begin{table}[H]
+\centering
+\caption{Descriptive Profile by Fragility Classification}
+\label{tab:profile}
+\resizebox{\textwidth}{!}{\input{../../results/tables/table_2_fragility_profile.tex}}
+\end{table}
+
+\subsection{Screening-Rule Replication and Independent Predictive Benchmark}
+
+Table~\ref{tab:model_comparison} below presents the central empirical comparison. The full model, labelled as screening-rule replication, achieves ROC-AUC of 0.978 and PR-AUC of 0.952. These values show that the LASSO-logit pipeline can reproduce the constructed screening rule very well. However, the full model includes variables used to construct the outcome. Its high performance should therefore be interpreted as evidence that the rule has been replicated, not as independent predictive discovery.
+
+The leakage-reduced benchmark excludes \texttt{h1}, \texttt{h2}, \texttt{h5}, and \texttt{c22b}. This model achieves ROC-AUC of 0.770, PR-AUC of 0.428, and accuracy of 61.1 percent. The performance gap between the two specifications is the main empirical result. It shows that the recovered rule carries substantial mechanical signal, while the remaining firm characteristics retain only moderate independent predictive information.
+
+\begin{table}[H]
+\centering
+\caption{Full and Leakage-Reduced Model Performance}
+\label{tab:model_comparison}
+\resizebox{\textwidth}{!}{\input{../../results/tables/paper1_model_performance_comparison.tex}}
+\end{table}
+
+Figure~\ref{fig:second_roc} below shows the receiver operating characteristic curve for the full model using the second-run raw-data reconstruction. The test set contains 90 firms, including 16 fragility-classified firms, and the model includes outcome-rule variables. As shown in Figure~\ref{fig:second_roc}, the curve lies close to the upper-left region of the plot. This confirms strong replication of the screening rule across classification thresholds.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{../../results/figures/second_run/second_run_lasso_roc.png}
+\caption{Screening-rule replication ROC curve, test set $n=90$, rule variables included}
+\label{fig:second_roc}
+\end{figure}
+
+Figure~\ref{fig:leakage_reduced_roc} below shows the ROC curve for the leakage-reduced model. As shown in Figure~\ref{fig:leakage_reduced_roc}, the curve remains above the diagonal line of no discrimination but is substantially weaker than the full-model curve. This figure contributes to the social-science interpretation of the results by showing that the project contains some predictive signal beyond the rule variables, but not enough to support strong policy claims without external validation.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{../../results/figures/second_run/second_run_lasso_no_rulevars_roc.png}
+\caption{Leakage-reduced ROC curve, test set $n=90$, outcome-rule variables excluded}
+\label{fig:leakage_reduced_roc}
+\end{figure}
+
+\subsection{Calibration, Threshold Sensitivity, and Subgroup Performance}
+
+Figure~\ref{fig:leakage_calibration} below reports the calibration plot for the leakage-reduced benchmark. Calibration evaluates whether predicted probabilities correspond to observed fragility-classification rates. As shown in Figure~\ref{fig:leakage_calibration}, the upper probability bins overstate observed fragility rates. This matters because class balancing improves classification of the minority class but can reduce probability calibration. The Brier score in Table~\ref{tab:model_comparison} should therefore be interpreted alongside the ROC-AUC and PR-AUC, not as a deployment-ready probability estimate.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{../../results/figures/second_run/second_run_lasso_no_rulevars_calibration.png}
+\caption{Leakage-reduced calibration plot, test set $n=90$}
+\label{fig:leakage_calibration}
+\end{figure}
+
+Figure~\ref{fig:leakage_pr} below reports the precision-recall curve for the leakage-reduced benchmark. Because only 17.3 percent of firms are fragility-classified, PR-AUC is especially informative: it evaluates performance for the minority class more directly than accuracy. As shown in Figure~\ref{fig:leakage_pr}, the leakage-reduced model performs above the prevalence baseline but remains far below the full screening-rule replication model. This reinforces the conclusion that independent predictive signal is moderate rather than decisive.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{../../results/figures/second_run/second_run_lasso_no_rulevars_precision_recall.png}
+\caption{Leakage-reduced precision-recall curve, test set $n=90$}
+\label{fig:leakage_pr}
+\end{figure}
+
+Table~\ref{tab:thresholds} below reports threshold sensitivity for the leakage-reduced benchmark. Lower thresholds identify more fragility-classified firms but generate many false positives. At a 0.30 threshold, recall reaches 100 percent but specificity is only 26 percent. At a 0.70 threshold, specificity rises to 92 percent but recall falls to 38 percent. This table contributes directly to policy interpretation: no single threshold is universally correct, and any operational cutoff should depend on whether the policy objective prioritizes broad diagnostic outreach or more selective intervention.
+
+\begin{table}[H]
+\centering
+\caption{Leakage-Reduced Threshold Sensitivity}
+\label{tab:thresholds}
+\resizebox{\textwidth}{!}{\input{../../results/tables/second_run_lasso_no_rulevars_threshold_sensitivity.tex}}
+\end{table}
+
+Table~\ref{tab:subgroup} below reports leakage-reduced test-set performance by region, sector, and firm size. The estimates should be read cautiously because some cells are small; for example, the large-firm test subgroup contains no fragility-classified firms. These subgroup results are descriptive diagnostics only, not evidence of stable differences in model fairness or performance. Still, the table is useful as an initial fairness and stability screen. It shows that accuracy, precision, and recall vary across subgroups, which means future versions of the model should report subgroup confidence intervals, bootstrapped uncertainty, and bias audits before any policy deployment.
+
+\begin{table}[H]
+\centering
+\caption{Leakage-Reduced Subgroup Performance}
+\label{tab:subgroup}
+\resizebox{\textwidth}{!}{\input{../../results/tables/second_run_lasso_no_rulevars_subgroup_performance.tex}}
+\end{table}
+
+\subsection{Selected Predictive Signals and the Fragility Paradox}
+
+Table~\ref{tab:coef_full} below reports the largest full-model coefficients from the second-run workflow. The largest weights correspond to \texttt{h5}, \texttt{c22b}, and \texttt{h1}, which are all connected to the recovered outcome rule. This table helps explain why the full model performs so strongly: it is recovering rule mechanics rather than identifying independent predictive relationships.
+
+\begin{table}[H]
+\centering
+\caption{Screening-Rule Replication Coefficients}
+\label{tab:coef_full}
+\small
+\input{../../results/tables/second_run_lasso_coefficients.tex}
+\end{table}
+\normalsize
+
+Figure~\ref{fig:second_coef} below visualizes the same full-model coefficient pattern. As shown in Figure~\ref{fig:second_coef}, process innovation and website-status variables dominate the classifier. This visual pattern is the empirical basis for the paper's construct-validity caution and for the modernization-fragility paradox discussed in the theoretical framework.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../../results/figures/second_run/second_run_lasso_coefficients.png}
+\caption{Largest screening-rule replication coefficients}
+\label{fig:second_coef}
+\end{figure}
+
+Table~\ref{tab:coef_reduced} below reports coefficients after the rule variables are removed. The largest remaining signal is \texttt{b6}, the number of full-time employees when the establishment started operations, followed by loan-application, e-payment, research-and-development, and working-capital variables. These results should be interpreted as predictive associations with a constructed classification. They suggest where future external validation should focus, but they do not establish causal pathways.
+
+\begin{table}[H]
+\centering
+\caption{Leakage-Reduced Coefficients}
+\label{tab:coef_reduced}
+\small
+\input{../../results/tables/second_run_lasso_no_rulevars_coefficients.tex}
+\end{table}
+\normalsize

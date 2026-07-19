@@ -1,0 +1,6 @@
+Variable code,Official WBES/Stata label,Legacy/draft label,Role in outcome rule,Final interpretation,Implication for theory
+h1,New Products/Services Introduced Over Last 3 Yrs,Product/service innovation,Used in third branch when h5=2 and c22b=2,Product/service innovation status,"Capability indicator; interpret as modernization status, not financial distress."
+h2,New Products/Services Also New For Thr Establishment'S Main Market,New-to-market innovation,Used in third branch when h5=2 and c22b=2,Market novelty of innovation,Signals innovation depth but has missingness; avoid causal claims.
+h5,"During Last 3 Yrs, Establishment Introduced New/Significantly Improved Process",Revenue volatility,Used in all three branches,Process innovation status,Central construct-validity tension; any revenue-volatility reading requires a documented recode.
+c22b,Establishment Has Its Own Website,Digital-platform difficulty,Used in second and third branches,Own-website status,Digital-presence indicator; not direct evidence of platform difficulty.
+l1,"Num. Permanent, Full-Time Employees At End of Last Fiscal Year",Employment vulnerability,Used in first and second branches,Permanent full-time employment count,Firm-size/employment component; supports size-related screening interpretation.

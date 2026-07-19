@@ -1,0 +1,10 @@
+Metric,Value
+Accuracy,0.9666666666666667
+Precision,0.8823529411764706
+Recall/Sensitivity,0.9375
+Specificity,0.972972972972973
+ROC-AUC,0.9759290540540541
+True positives,15.0
+False positives,2.0
+True negatives,72.0
+False negatives,1.0

@@ -1,0 +1,6 @@
+pandas
+openpyxl
+python-docx
+matplotlib
+scikit-learn
+nbformat

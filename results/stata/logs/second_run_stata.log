@@ -1,0 +1,1403 @@
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  D:/Research/LASSO/results/stata/logs/second_run_stata.log
+  log type:  text
+ opened on:  19 May 2026, 06:36:27
+
+. 
+. display "Second run of Rwanda 2023 raw Enterprise Survey data"
+Second run of Rwanda 2023 raw Enterprise Survey data
+
+. display "Started: $S_DATE $S_TIME"
+Started: 19 May 2026 06:36:27
+
+. 
+. use "$RAW", clear
+
+. describe
+
+Contains data from D:/Research/LASSO/data/raw/Rwanda-2023-full-data.dta
+ Observations:           358                  
+    Variables:           355                  1 Jun 2025 16:26
+-------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------
+idstd           long    %12.0g     IDSTD      WEB STD FIRMID
+id              int     %8.0g      ID         Firm ID
+a4a             byte    %14.0g     A4A        Industry Sampling Sector
+a6a             byte    %10.0g     A6A        Sampling Size
+a2              byte    %20.0g     A2         Sampling Region
+a1c             byte    %13.0g     A1C        Sample Frame Level
+competition_s~t byte    %8.0g      COMPETITION_SELECT
+                                              Random selection for market
+                                                competition question
+tax_select      byte    %8.0g      TAX_SELECT
+                                              Random selection for market tax
+                                                compliance question
+vat_applicable  byte    %8.0g      VAT_APPLICABLE
+                                              VAT is applicable in economy
+a4b_v4          byte    %72.0g     A4B_V4     Industry Screener Sector
+a0              byte    %15.0g     A0         Questionnaire
+a3a             byte    %20.0g     A3A        Region of The Establishment
+a6c             int     %8.0g      A6C        Screener Size
+a7              byte    %8.0g      A7         Establishment part of a
+                                                multi-establishment Firm?
+panel           byte    %8.0g      PANEL      Panel Code
+a1a             byte    %11.0g     A1A        Language of The Interview
+a14d            byte    %10.0g     A14D       Day
+a14m            byte    %10.0g     A14M       Month
+a14y            int     %10.0g     A14Y       Year
+a14h            byte    %10.0g     A14H       Hour
+a14min          byte    %10.0g     A14MIN     Minutes
+a20y            int     %10.0g     A20Y       Close Year of The Last Completed
+                                                Fiscal Year
+a20m            byte    %10.0g     A20M       Close Month of The Last Completed
+                                                Fiscal Year
+a20d            byte    %10.0g     A20D       Close Day of The Last Completed
+                                                Fiscal Year
+a1              byte    %8.0g      A1         Country Code
+a12             str8    %9s                   Interviewer Number
+a7a             int     %24.0g     A7A        Number of Establishments In The
+                                                Firm
+a7b             byte    %8.0g      A7B        Is This Establishment The
+                                                Headquarters Location?
+a11             byte    %8.0g      A11        If Hq, Financial Statements
+                                                Independent of The Rest of
+                                                Establishment
+a7c             byte    %8.0g      A7C        Does This Headquarters Location
+                                                Engage In Production or Sales
+                                                At This Location?
+a9              byte    %8.0g      A9         Establishment'S Financial
+                                                Statements Prepared Separately
+                                                From Hq Statements
+b1              byte    %70.0g     B1         Legal Status of The Firm
+b1x             str1    %9s                   Other (Specify)
+b3a             byte    %24.0g     B3A        Is the largest owner also the top
+                                                manager
+b2a             byte    %24.0g     B2A        % Owned By Private Domestic
+                                                Individuals, Companies or
+                                                organizations
+b2b             byte    %24.0g     B2B        % Owned By Private Foreign
+                                                Individuals, Companies or
+                                                organizations
+b2c             byte    %24.0g     B2C        % Owned By Government/State
+b2d             byte    %24.0g     B2D        % Owned By Other
+b4              byte    %24.0g     B4         Amongst The Owners of The Firm,
+                                                Are There Any Females?
+b4a             byte    %24.0g     B4A        % of The Firm Owned By Females
+b5              int     %24.0g     B5         Year Establishment Began
+                                                Operations
+b6              int     %24.0g     B6         Number of Full-Time Employees of
+                                                The Establishment When It
+                                                Started Operations
+b6b             int     %31.0g     B6B        In What Year Was This
+                                                Establishment Formally
+                                                Registered?
+b7              byte    %24.0g     B7         How Many Years of Experience
+                                                Working In This Sector Does The
+                                                Top Manager Have?
+b7a             byte    %24.0g     B7A        Is The Top Manager Female?
+b8              byte    %24.0g     B8         Does Establishment Have An
+                                                Internationally-Recognized
+                                                Quality Certification?
+b8x             str209  %209s                 Specify The
+                                                Internationally-Recognized
+                                                Quality Certifications
+c3              byte    %24.0g     C3         Application To Obtain An
+                                                Electrical Connection Submitted
+                                                Over The Last 2 Years
+c4              int     %24.0g     C4         How Many Days Did It Take For You
+                                                To Receive An Electrical
+                                                Connection Service?
+c5              byte    %24.0g     C5         Informal Gift/Payment Expected or
+                                                Requested For An Electrical
+                                                Connection?
+c31             long    %24.0g     C31        Cost to obtain electrical
+                                                connection
+c32             long    %24.0g     C32        Electricity consumption in a
+                                                typical month (kWh)
+c6              byte    %24.0g     C6         Over Last FY, Did This
+                                                Establishment Experience Power
+                                                Outages?
+c7              byte    %24.0g     C7         Number of Power Outages
+                                                Experienced In A Typical Month
+                                                In Last Fiscal Year
+c8a             int     %24.0g     C8A        Average Duration of Power
+                                                Outages: Hours
+c8b             byte    %24.0g     C8B        Average Duration of Power
+                                                Outages: Minutes
+c9a             byte    %24.0g     C9A        In Last FY, Losses As % of Annual
+                                                Sales Due To Power Outages
+c9b             long    %24.0g     C9B        In Last FY, Value of Losses Due
+                                                To Power Outages
+c10             byte    %24.0g     C10        Generator Shared or Owned Over
+                                                The Course of Last Fiscal Year?
+c11             byte    %24.0g     C11        % Electricity From Generator
+                                                Owned/Shared By The
+                                                Establishment In Last FY
+c12             byte    %24.0g     C12        Application To Obtain A Water
+                                                Connection Submitted Over The
+                                                Last 2 Years
+c13             int     %24.0g     C13        How Many Days Did It Take For You
+                                                To Obtain A Water Connection?
+c14             byte    %24.0g     C14        When You Applied For A Water
+                                                Connection, Was An Informal
+                                                Gift/Payment Requested?
+c33             long    %24.0g     C33        Cost to obtain water connection
+c34             long    %24.0g     C34        Water consumption in a typical
+                                                month
+c34b            byte    %24.0g     C34B       Unit measure of answer to c34
+c34bx           str1    %9s                   Other (Specify)
+c152            byte    %24.0g     C152       Did You Experience Insufficient
+                                                Water Supply In Last FY?
+c162            byte    %24.0g     C162       Frequency of Incidents of Water
+                                                Shortages In A Typical Month In
+                                                Last FY
+c172            int     %24.0g     C172       Average Length of Water Shortages
+                                                In Last Fiscal Year
+c35a            byte    %24.0g     C35A       In Last FY, Losses As % of Annual
+                                                Sales Due To Water Shortages
+c35b            long    %24.0g     C35B       In Last FY, Value of Losses Due
+                                                To Water Shortages
+c22b            byte    %24.0g     C22B       Establishment Has Its Own Website
+c36             byte    %24.0g     C36        Application To Obtain Fixed
+                                                Broadband Internet Connection
+                                                Over The Last 2 Years
+c37             int     %24.0g     C37        How Many Days Did It Take For You
+                                                To Obtain Internet Connection?
+c38             long    %24.0g     C38        Cost to obtain Internet
+                                                connection
+c39             byte    %54.0g     C39        Did You Experience Internet
+                                                Disruptions In Last FY?
+c40a            int     %24.0g     C40A       Average Length of Internet
+                                                Disruptions: Hours
+c40b            byte    %24.0g     C40B       Average Length of Internet
+                                                Disruptions: Minutes
+c41a            byte    %24.0g     C41A       In Last FY, Losses As % of Annual
+                                                Sales Due To Internet
+                                                Disruptions
+c41b            long    %24.0g     C41B       In Last FY, Value of Losses Due
+                                                To Internet Disruptions
+c42             byte    %45.0g     C42        How difficult to switch internet
+                                                providers?
+c30a            byte    %24.0g     C30A       How Much of An Obstacle:
+                                                Electricity To Operations of
+                                                This Establishment?
+d1a1a           byte    %20.0g     D1A1A      Establishment'S Main
+                                                Product/Service Last FY
+d1a6a           int     %24.0g     D1A6A      Total number of hotel rooms in
+                                                the last FY
+d1a6b           long    %24.0g     D1A6B      Total areas of rooms in the last
+                                                FY
+d1a6c           byte    %15.0g     D1A6C      Specify units
+d1a6cx          str1    %9s                   Other (Specify)
+d1a3            byte    %24.0g     D1A3       Main Product/Service: Percent of
+                                                Total Annual Sales
+d2              double  %24.0g     D2         In Last Fiscal Year, What Were
+                                                This Establishment’S Total
+                                                Annual Sales?
+d2x             str124  %124s                 Please Also Write Out The Number
+d2a1            double  %33.0g     D2A1       What were the establishment's
+                                                sales 2 years ago?
+d2a1x           str116  %116s                 Please Also Write Out The Number
+n3              double  %48.0g     N3         What were the establishment's
+                                                sales 3 years ago?
+n3x             str121  %121s                 Please Also Write Out The Number
+d3a             byte    %24.0g     D3A        % of Sales: National Sales
+d3b             byte    %24.0g     D3B        % of Sales: Indirect Exports
+d3c             byte    %24.0g     D3C        % of Sales: Direct Exports
+d31x            str28   %28s                  Main destination of exports
+                                                (country code)
+d32             byte    %24.0g     D32        Main point of exit
+d4a             byte    %28.0g     D4A        In Last FY, Avg. Num. of Days For
+                                                Exported Goods To Clear
+                                                Customs?
+d4b             byte    %24.0g     D4B        If less than a day, total hours
+                                                for exported goods to clear
+                                                customs
+d33a            byte    %24.0g     D33A       In Last FY, Avg. Num. of Days For
+                                                Exported Goods To Clear all
+                                                border control age
+d33b            byte    %24.0g     D33B       If less than a day, total hours
+                                                for exported goods to clear all
+                                                border control a
+d34             byte    %24.0g     D34        FCA costs to comply with all
+                                                export requirements (% of value
+                                                of goods exported)
+d35             byte    %24.0g     D35        Any exports shipped by main
+                                                parcel?
+d36a            byte    %24.0g     D36A       In Last FY, Avg. Num. of Days For
+                                                Exported Goods To Clear all
+                                                border control age
+d36b            byte    %24.0g     D36B       If less than a day, total hours
+                                                for exported goods to clear all
+                                                border control a
+d37             byte    %24.0g     D37        Average cost of digital exports
+                                                (% of value of goods)
+d8              int     %24.0g     D8         In What Year Did This
+                                                Establishment First Export
+                                                Directly or Indirectly?
+d12a            byte    %24.0g     D12A       % of Material Inputs And Supplies
+                                                of Domestic origin In Last
+                                                Fiscal Year
+d12b            byte    %24.0g     D12B       % of Material Inputs And Supplies
+                                                of Foreign origin In Last
+                                                Fiscal Year
+d13             byte    %24.0g     D13        Were Any of These Material Inputs
+                                                And Supplies Imported Directly?
+d38x            str28   %28s                  Main origin of imports (country
+                                                code)
+d39             byte    %24.0g     D39        Main point of entry
+d14a            byte    %28.0g     D14A       Avg. Num. of Days For Imported
+                                                Goods To Clear Customs In Last
+                                                Fiscal Year
+d14b            byte    %24.0g     D14B       If less than a day, total hours
+                                                for imported goods to clear
+                                                customs
+d40a            int     %24.0g     D40A       In Last FY, Avg. Num. of Days For
+                                                Imported Goods To Clear all
+                                                border control age
+d40b            byte    %24.0g     D40B       If less than a day, total hours
+                                                for imported goods to clear all
+                                                border control a
+d41             byte    %24.0g     D41        DAP costs to comply with all
+                                                import requirements (% of value
+                                                of goods imported)
+d30a            byte    %24.0g     D30A       How Much of An Obstacle:
+                                                Transport?
+d30b            byte    %24.0g     D30B       How Much of An Obstacle: Customs
+                                                And Trade Regulations?
+o1              byte    %24.0g     O1         In the last three years,
+                                                establishment had any
+                                                commercial dispute?
+o2              byte    %24.0g     O2         Use of courts, arbitration etc.
+                                                to (or attempt to ) resolve
+                                                commercial dispute?
+o3a             byte    %28.0g     O3A        Reliable alternative to courts
+                                                for resolving commercial
+                                                disputes: Arbitration?
+o3b             byte    %28.0g     O3B        Reliable alternative to courts
+                                                for resolving commercial
+                                                disputes:Mediation etc.?
+r1              byte    %156.0g    R1         What Happened When Problem In The
+                                                Production Process/Services
+                                                Provision Arose?
+r2              byte    %24.0g     R2         Did This Establishment Monitor
+                                                Any Production/Service
+                                                Performance Indicators?
+r3              byte    %44.0g     R3         How Many Production/Service
+                                                Provision Performance
+                                                Indicators Were Monitored?
+r4              byte    %24.0g     R4         Did This Establishment Have
+                                                Production/Service Provision
+                                                Targets?
+r5              byte    %68.0g     R5         What Best Describes The Time
+                                                Frame of Production/Service
+                                                Provision Targets?
+r6              byte    %50.0g     R6         How Easy To Achieve Its
+                                                Production/Service Provision
+                                                Targets?
+r7              byte    %41.0g     R7         Who Was Aware of The
+                                                Production/Service Provision
+                                                Targets At This Establishment?
+r8              byte    %24.0g     R8         Was There Performance Bonuses
+                                                Based On Production/Service
+                                                Provision Targets?
+r9              byte    %34.0g     R9         What Were Managers' Performance
+                                                Bonuses Usually Based On?
+r10             byte    %128.0g    R10        What Was The Primary Way
+                                                Non-Managers Were Promoted?
+r11             byte    %60.0g     R11        When Was An Under-Performing
+                                                Non-Manager Reassigned or
+                                                Dismissed?
+e1              byte    %87.0g     E1         In Last FY, Main Market For
+                                                Establishment'S Main Product
+e2b             int     %24.0g     E2B        Competitors For The Main
+                                                Product/Service In The Main
+                                                Market
+e31a            byte    %24.0g     E31A       Market share of largest
+                                                competitor in the last fiscal
+                                                year
+e31b            byte    %24.0g     E31B       Market share of largest
+                                                competitor in the last fiscal
+                                                year
+e6              byte    %24.0g     E6         Do You Use Technology Licensed
+                                                From A Foreign-Owned Company?
+e11             byte    %24.0g     E11        Does This Establishment Compete
+                                                Against Unregistered or
+                                                Informal Firms?
+e32             byte    %30.0g     E32        Change in competition in the last
+                                                year?
+e33             byte    %24.0g     E33        Establishment can increase prices
+                                                more than competitors without
+                                                losing customers
+e34             byte    %24.0g     E34        SOEs operating in the
+                                                establishment's main market?
+e35             byte    %25.0g     E35        How SOE affects ability to grow
+                                                and expand?
+e30             byte    %24.0g     E30        How Much of An Obstacle:
+                                                Practices of Competitors In
+                                                Informal Sector?
+h1              byte    %24.0g     H1         New Products/Services Introduced
+                                                Over Last 3 Yrs
+h2              byte    %24.0g     H2         New Products/Services Also New
+                                                For Thr Establishment'S Main
+                                                Market
+h3x             str244  %244s                 Describe In Detail The Main New
+                                                or Significantly Improved
+                                                Product or Service
+h4x             str243  %243s                 Describe How The Main
+                                                New/Significantly Improved
+                                                Product or Service Is Different
+h5              byte    %24.0g     H5         During Last 3 Yrs, Establishment
+                                                Introduced New/Significantly
+                                                Improved Process
+h6x             str230  %230s                 Describe Main New/Significantly
+                                                Improved Process This
+                                                Establishment Introduced
+h7x             str244  %244s                 How The Main New/Significantly
+                                                Improved Process Is Different
+h8              byte    %24.0g     H8         During Last Fiscal Year,
+                                                Establishment Spent On R&D
+                                                (Excl Market Research)?
+h9              long    %24.0g     H9         How Much Spent On R&D, Either
+                                                In-House or External?
+f1              byte    %24.0g     F1         In Last FY, What Was The Capacity
+                                                Utilization (%) of This
+                                                Establishment?
+g2              byte    %24.0g     G2         Applic. To Obtain A
+                                                Construction-Related Permit
+                                                Submitted Over The Last 2 Years
+g3              int     %24.0g     G3         How Many Days Did It Take For You
+                                                To Obtain A
+                                                Construction-Related Permit?
+g4              byte    %24.0g     G4         Informal Gift/Payment Expected or
+                                                Requested For A
+                                                Construction-Related Permit
+g31             byte    %28.0g     G31        In last 2 years, establishment
+                                                applied for occupancy permit
+g32             byte    %24.0g     G32        Wait for occupancy permit
+g33             long    %24.0g     G33        Cost of occupancy permit
+g5a             int     %24.0g     G5A        What Is The Total Selling Area In
+                                                This Establishment?
+g5b             byte    %13.0g     G5B        The Area Is Measured In:
+g5bx            str1    %9s                   Specify Other Units (If Not
+                                                Included Above) The Area Is
+                                                Measured In
+g30a            byte    %24.0g     G30A       How Much of An Obstacle: Access
+                                                To Land?
+ge3             byte    %24.0g     GE3        Experience damage of physical
+                                                assets due to extreme weather
+                                                events?
+ge3a            long    %24.0g     GE3A       Monetary damage of physical
+                                                assets?
+ge7             byte    %24.0g     GE7        Over the last 3 years,
+                                                establishment monitor its CO2
+                                                emissions?
+ge8d            byte    %33.0g     GE8D       Over last 3 years, establishment
+                                                adopt energy management
+                                                measures?
+k3a             byte    %24.0g     K3A        % of Working Capital Financed
+                                                From Internal Funds/Retained
+                                                Earnings
+k3bc            byte    %24.0g     K3BC       % of Working Capital Borrowed
+                                                From Banks
+k3e             byte    %24.0g     K3E        % of Working Capital Borrowed
+                                                From Non-Bank Financial
+                                                Institutions
+k3f             byte    %24.0g     K3F        % of Working Capital Purchased On
+                                                Credit/Advances From Suppliers
+                                                /Customers
+k3hd            byte    %24.0g     K3HD       % of Working Capital Financed By
+                                                Other (Money Lenders, Friends,
+                                                Relatives, Etc)
+k4              byte    %24.0g     K4         Did This Establishment Purchase
+                                                Any Fixed Assets In Last FY?
+n5a             long    %24.0g     N5A        Total Annual Expenditure For
+                                                Purchases of Equipment In Last
+                                                FY
+n5b             long    %24.0g     N5B        Total Annual Expenditure For
+                                                Purchases of Land And Buildings
+                                                In Last FY
+k5a             byte    %24.0g     K5A        Last FY, % Fixed Assets Funded
+                                                By: Internal Funds/Retained
+                                                Earnings
+k5a1            long    %24.0g     K5A1       Fixed Assets - Value Internal
+                                                Funds or Retained Earnings
+k5i             byte    %24.0g     K5I        Last FY, % Fixed Assets Funded
+                                                By: Owners’ Contributions or
+                                                Issued New Equity
+k5i1            long    %24.0g     K5I1       Fixed Assets - Value Owners’
+                                                Contribution or Issued New
+                                                Equity Shares
+k5bc            byte    %24.0g     K5BC       Last FY, % Fixed Assets Funded
+                                                By: Bank Borrowing
+k5bc1           long    %24.0g     K5BC1      Fixed Assets - Value Borrowed
+                                                From Banks
+k5e             byte    %24.0g     K5E        Last FY, % Fixed Assets Funded
+                                                By: Non-Bank Financial
+                                                Institutions
+k5e1            long    %24.0g     K5E1       Fixed Assets - Value Borrowed
+                                                From Non-Bank Financial
+                                                Institutions
+k5f             byte    %24.0g     K5F        Last FY, % Fixed Assets Funded
+                                                By: Credit From
+                                                Suppliers/Advances From
+                                                Customers
+k5f1            long    %24.0g     K5F1       Fixed Assets - Value Purchases On
+                                                Credit From Suppliers, Advances
+                                                From Customers
+k5hdj           byte    %24.0g     K5HDJ      Last FY, % Fixed Assets Funded
+                                                By: Other (Money
+                                                Lenders\Friends\Relatives\Etc)
+k5hdj1          long    %24.0g     K5HDJ1     Fixed Assets - Value Other
+k4b             byte    %24.0g     K4B        Purchase Any New/Used Fixed
+                                                Assets?
+n5c             long    %24.0g     N5C        Total Annual Expenditure For
+                                                Purchases of Equipment In Year
+                                                Prior To Last FY
+n5d             long    %24.0g     N5D        Total Annual Expenditure On Land
+                                                And Buildings In Year Prior To
+                                                Last FY
+k6              byte    %24.0g     K6         Does This Establishment Have A
+                                                Checking And\or Saving Account?
+k7              byte    %24.0g     K7         At This Time, Does This
+                                                Establishment Have An Overdraft
+                                                Facility?
+k82             byte    %37.0g     K82        Establishment Has A Line of
+                                                Credit or Loan From A Financial
+                                                Institution?
+k9              byte    %38.0g     K9         Type of Financial Institution
+                                                That Granted The Line of Credit
+                                                or Loan
+k10             int     %24.0g     K10        Year When The Most Recent
+                                                Loan/Line of Credit Approved
+k11             double  %24.0g     K11        For The Most Recent Loan, What
+                                                Was The Value At The Time of
+                                                Approval?
+k13             byte    %24.0g     K13        Financing Required For The Most
+                                                Recent Line of Credit or Loan
+k14a            byte    %24.0g     K14A       Type of Collateral Required For
+                                                The Most Recent Loan? Land,
+                                                Buildings
+k14b            byte    %24.0g     K14B       Type of Collateral Required For
+                                                The Most Recent Loan? Equipment
+k14c            byte    %24.0g     K14C       Type of Collateral Required For
+                                                The Most Recent Loan? Accounts
+k14d            byte    %24.0g     K14D       Type of Collateral Required For
+                                                The Most Recent Loan? Personal
+                                                Assets
+k14e            byte    %24.0g     K14E       Type of Collateral Required For
+                                                The Most Recent Loan? Other
+k15a            double  %24.0g     K15A       Value of Collateral Required For
+                                                The Most Recent Credit/Loan
+k15b            byte    %24.0g     K15B       Total Number of Open Lines of
+                                                Credit and Outstanding Loans
+k15c            double  %24.0g     K15C       Total Outstanding Balance of All
+                                                Open Lines of Credit and Loans
+                                                (LCU)
+k15d            byte    %24.0g     K15D       Outstanding Personal Loans Used
+                                                To Finance Establishment'S
+                                                Business Activities?
+k162            byte    %37.0g     K162       In Last FY, Did Establishment
+                                                Apply For New Loans/Lines of
+                                                Credit?
+k17             byte    %57.0g     K17        Main Reason For Not Applying For
+                                                New Loans or New Lines of
+                                                Credit
+k20a1           byte    %32.0g     K20A1      What Was The Outcome of That Most
+                                                Recent Application For
+                                                Loan/Line of Credit?
+k31             long    %24.0g     K31        Total cost to apply for most
+                                                recent loan
+k32             int     %24.0g     K32        Days to receive a decision about
+                                                most recent loan application
+k21             byte    %24.0g     K21        Financial Statements Checked &
+                                                Certified By External Auditor
+                                                In Last FY?
+k33             byte    %24.0g     K33        Percentage of payments received
+                                                using e-payments
+k34             byte    %60.0g     K34        Main type of e-payment accepted
+k35             byte    %35.0g     K35        Avg. days to receive main type of
+                                                e-payment
+k36             byte    %24.0g     K36        Cost per transaction (% of
+                                                transaction) to receive main
+                                                type of e-payment
+k37             long    %24.0g     K37        Monthly fees and subscription
+                                                costs to receive main type of
+                                                e-payment
+k38             byte    %24.0g     K38        Percentage of payments made using
+                                                e-payments
+k39             byte    %60.0g     K39        Main type of e-payment used to
+                                                make payments
+k40             byte    %24.0g     K40        Cost per transaction (% of
+                                                transaction) to make main type
+                                                of e-payment
+k30             byte    %24.0g     K30        How Much of An Obstacle: Access
+                                                To Finance
+j31             byte    %28.0g     J31        In resolving commercial disputes,
+                                                courts are independent and
+                                                impartial
+j2              byte    %24.0g     J2         What % of Senior Management Time
+                                                Was Spent In Dealing With Govt
+                                                Regulations?
+j3              byte    %24.0g     J3         Over The Last 12 Months, Was This
+                                                Establishment Inspected By Tax
+                                                officials?
+j4              int     %24.0g     J4         Frequency of
+                                                Inspections/Requirement For
+                                                Meeting By Tax officials
+j5              byte    %24.0g     J5         In Any of These Inspections Was A
+                                                Gift/Informal Payment Requested
+                                                ?
+j32             byte    %24.0g     J32        Did any of these visits or
+                                                meetings consist of a tax
+                                                audit?
+j33             byte    %24.0g     J33        Weeks until final audit report
+                                                was received
+j34             byte    %24.0g     J34        Establishment outsourced some
+                                                tax-related activities in the
+                                                last FY
+j35a            int     %24.0g     J35A       Total annual time spent on tax
+                                                compliance (hours)
+j35b            int     %24.0g     J35B       Average monthly time spent on tax
+                                                compliance (hours)
+j36             byte    %24.0g     J36        In last FY, did establishment
+                                                file taxes electronically
+j37             byte    %24.0g     J37        In last FY, did establishment pay
+                                                taxes electronically
+j38             byte    %24.0g     J38        In the last 3 yrs., establishment
+                                                has applied for a VAT refund
+j39             byte    %24.0g     J39        Weeks to receive VAT refund
+j40             byte    %61.0g     J40        Main reason for not applying for
+                                                a VAT tax refund
+j6a             byte    %24.0g     J6A        Government Contract Secured (or
+                                                Attempted) In The Last 12
+                                                Months?
+j41             byte    %24.0g     J41        Degree of difficulty to comply
+                                                with govt contract tender
+                                                requirements
+j42             byte    %24.0g     J42        Establishment has held a govt
+                                                contract in last 3 yrs?
+j43             int     %24.0g     J43        Typical number of days to receive
+                                                payment under govt contract
+j7a             byte    %29.0g     J7A        Percent of Total Annual Sales
+                                                Paid In Informal Payments
+j7b             long    %29.0g     J7B        Total Annual Informal Payment
+j10             byte    %24.0g     J10        Application To Obtain An Import
+                                                License Submitted Over The Last
+                                                2 Years?
+j11             int     %24.0g     J11        How Many Days Did It Take To
+                                                Obtain Your Import License?
+j12             byte    %24.0g     J12        When You Applied For An Import
+                                                License, Was An Informal
+                                                Gift/Payment Requested?
+j13             byte    %24.0g     J13        Application To Obtain An
+                                                Operating License Submitted
+                                                Over Last 2 Years?
+j14             int     %24.0g     J14        How Many Days Did It Take To
+                                                Obtain Your Operating License?
+j15             byte    %24.0g     J15        When You Applied For Operating
+                                                License Was An Informal
+                                                Gift/Payment Requested?
+j30a            byte    %24.0g     J30A       How Much of An Obstacle: Tax
+                                                Rates
+j30b            byte    %24.0g     J30B       How Much of An Obstacle: Tax
+                                                Administrations
+j30c            byte    %24.0g     J30C       How Much of An Obstacle: Business
+                                                Licensing And Permits
+j30e            byte    %24.0g     J30E       How Much of An Obstacle:
+                                                Political Instability
+j30f            byte    %24.0g     J30F       How Much of An Obstacle:
+                                                Corruption
+h30             byte    %24.0g     H30        How Much of An Obstacle: Courts
+i30             byte    %24.0g     I30        How Much of An Obstacle: Crime,
+                                                Theft And Disorder?
+j30_taxrate_pos byte    %10.0g     J30_TAXRATE_POS
+                                              J30: rotation position 1
+j30_taxadmin_~s byte    %10.0g     J30_TAXADMIN_POS
+                                              J30: rotation position 2
+j30_permit_pos  byte    %10.0g     J30_PERMIT_POS
+                                              J30: rotation position 3
+j30_instabili~s byte    %10.0g     J30_INSTABILITY_POS
+                                              J30: rotation position 4
+j30_corruptio~s byte    %10.0g     J30_CORRUPTION_POS
+                                              J30: rotation position 5
+j30_courts_pos  byte    %10.0g     J30_COURTS_POS
+                                              J30: rotation position 6
+j30_crime_pos   byte    %10.0g     J30_CRIME_POS
+                                              J30: rotation position 7
+l1              int     %24.0g     L1         Num. Permanent, Full-Time
+                                                Employees At End of Last Fiscal
+                                                Year
+l2              int     %33.0g     L2         Num. Permanent, Full-Time
+                                                Employees At End of 3 Fiscal
+                                                Years Ago
+l3a             int     %24.0g     L3A        Num. Full-Time Employees At End
+                                                of Last FY: Production Workers
+l3b             int     %24.0g     L3B        Num. Full-Time Employees At End
+                                                of Last FY: Non-Production
+                                                Workers
+l4a1            int     %24.0g     L4A1       Num. of Permanent, Full-Time
+                                                Skilled Production Workers,
+                                                Last FY
+l4a2            int     %24.0g     L4A2       Num. of Permanent, Full-Time
+                                                Semi-skilled Production
+                                                Workers, Last FY
+l4b             int     %24.0g     L4B        Num. of Permanent, Full-Time
+                                                Low-skilled Production Workers,
+                                                Last FY
+l5a             int     %24.0g     L5A        Num. Full-Time Employees At End
+                                                of Last FY: Female Production
+                                                Workers
+l5b             int     %24.0g     L5B        Num. Full-Time Employees At End
+                                                of Last FY: Female
+                                                Non-Production Workers
+l5              int     %24.0g     L5         Num. Full-Time Employees At End
+                                                of Last FY: Female
+l9b             byte    %24.0g     L9B        % of Full Time Workers Completed
+                                                High School End of Last FY
+l9b1            int     %8.0g      L9B1       Number of Full Time Workers
+                                                Completed High School
+l10             byte    %24.0g     L10        Formal Training Programs For
+                                                Permanent, Full-Time Employees
+                                                In Last FY
+l11a            byte    %24.0g     L11A       % Permanent Full-Time Production
+                                                Employees Received Formal
+                                                Training In Last FY
+l11a1           int     %24.0g     L11A1      Training Programs Amount:
+                                                Production Full-Time Permanent
+                                                Employees Trained
+l11b            byte    %24.0g     L11B       % Permanent Fulltime
+                                                Nonproduction Employees
+                                                Received Formal Training In
+                                                Last FY
+l11b1           byte    %24.0g     L11B1      Training Programs
+                                                Amount:Non-Production Full-Time
+                                                Permanent Employees Trained
+l12a            byte    %27.0g     L12A       % Permanent Full-Time Female
+                                                Employees Received Formal
+                                                Training In Last FY
+l12a1           int     %27.0g     L12A1      Training Programs Amount:
+                                                Full-Time Permanent Female
+                                                Employees Trained
+l31             int     %51.0g     L31        In the last FY, number of workers
+                                                establishment needed to hire
+l32             int     %24.0g     L32        In the last FY, number of workers
+                                                establishment hired
+l33             byte    %64.0g     L33        Main reason establishment did not
+                                                hire more workers in the last
+                                                FY
+l34             byte    %24.0g     L34        In the last 3 yrs., establishment
+                                                has dismissed any permanent,
+                                                full-time workers
+l35             byte    %24.0g     L35        Typical number of weeks to
+                                                dismiss full-time permanent
+                                                worker
+l36             byte    %24.0g     L36        Typical number of weeks paid in
+                                                severance
+l1a             int     %24.0g     L1A        Num. Part-time Employees At End
+                                                of Last Fiscal Year
+l6              int     %42.0g     L6         Num. Full-Time Temporary
+                                                Employees At End of Last FY
+l6a             int     %24.0g     L6A        Female Temporary, Full-Time
+                                                Workers Employed Throughout
+                                                Last FY
+l8              byte    %24.0g     L8         Avg. Length of Employment of All
+                                                Full-Time Temporary Employees
+                                                In Last FY
+l37             byte    %24.0g     L37        In the last 3 yrs., establishment
+                                                has been involved in any labor
+                                                dispute
+l38             byte    %28.0g     L38        Typical number of weeks to
+                                                resolve labor dispute
+l39             long    %24.0g     L39        Cost to resolve labor dispute
+l40             byte    %24.0g     L40        In last FY, was establishment
+                                                visited by health and safety
+                                                inspectors
+l41             byte    %32.0g     L41        Was a report issued for health
+                                                and safety inspection
+l30a            byte    %24.0g     L30A       How Much of An Obstacle: Labor
+                                                Regulations?
+l30b            byte    %24.0g     L30B       How Much of An Obstacle:
+                                                Inadequately Educated
+                                                Workforce?
+m1a             byte    %47.0g     M1A        Biggest Obstacle Affecting The
+                                                Operation of This Establishment
+m1a_finance_pos byte    %10.0g     M1A_FINANCE_POS
+                                              m1a: Position of Access to
+                                                Finance
+m1a_land_pos    byte    %10.0g     M1A_LAND_POS
+                                              m1a: Position of Access to land
+m1a_permit_pos  byte    %10.0g     M1A_PERMIT_POS
+                                              m1a: Position of Business
+                                                licensing and permits
+m1a_corruptio~s byte    %10.0g     M1A_CORRUPTION_POS
+                                              m1a: Position of corruption
+m1a_courts_pos  byte    %10.0g     M1A_COURTS_POS
+                                              m1a: Position of Courts
+m1a_crime_pos   byte    %10.0g     M1A_CRIME_POS
+                                              m1a: Position of Crime, theft and
+                                                disorder
+m1a_trade_pos   byte    %10.0g     M1A_TRADE_POS
+                                              m1a: Position of Customs and
+                                                trade regulations
+m1a_electrici~s byte    %10.0g     M1A_ELECTRICITY_POS
+                                              m1a: Position of Electricity
+m1a_workforce~s byte    %10.0g     M1A_WORKFORCE_POS
+                                              m1a: Position of Inadequately
+                                                educated workforce
+m1a_labor_pos   byte    %10.0g     M1A_LABOR_POS
+                                              m1a: Position of Labor
+                                                regulations
+m1a_instabili~s byte    %10.0g     M1A_INSTABILITY_POS
+                                              m1a: Position of Political
+                                                instability
+m1a_informal_~s byte    %10.0g     M1A_INFORMAL_POS
+                                              m1a: Position of Practices of
+                                                competitors in the informal
+                                                sector
+m1a_taxadmin_~s byte    %10.0g     M1A_TAXADMIN_POS
+                                              m1a: Position of Tax
+                                                administration
+m1a_taxrate_pos byte    %10.0g     M1A_TAXRATE_POS
+                                              m1a: Position of Tax rates
+m1a_transport~s byte    %10.0g     M1A_TRANSPORT_POS
+                                              m1a: Position of Transport
+n2a             double  %24.0g     N2A        Total Labor Cost (Incl. Wages,
+                                                Salaries, Bonuses, Etc) In Last
+                                                Fiscal Year
+n2a2            long    %24.0g     N2A2       Social security payments and
+                                                employment-based taxes
+n2b             long    %24.0g     N2B        Total Annual Costs of Electricity
+                                                In Last Fiscal Year
+n2k             long    %24.0g     N2K        Total Annual Cost of Water
+n2l             long    %24.0g     N2L        Total Annual Cost of high-speed,
+                                                fixed broadband internet
+n2e             double  %24.0g     N2E        Cost of Raw Materials And
+                                                Intermediate Goods Used In
+                                                Prod. In Last Fiscal Year
+n2i             double  %24.0g     N2I        Total Annual Cost of Finished
+                                                Goods/Materials Bought To
+                                                Resell In Last FY
+n2a1            double  %24.0g     N2A1       Total Labor Cost (Incl. Wages,
+                                                Salaries, Bonuses, Etc) 2
+                                                fiscal years ago
+n2e1            double  %24.0g     N2E1       Total Cost of Raw Materials And
+                                                Intermediate Goods Used In
+                                                Production
+n7a             double  %24.0g     N7A        Cost For Establishment To
+                                                Re-Purchase All of Its
+                                                Machinery
+n11             byte    %24.0g     N11        Effective income-based tax rate
+n12             byte    %24.0g     N12        Effective consumption tax rate
+a15d            byte    %10.0g     A15D       Day
+a15m            byte    %10.0g     A15M       Month
+a15y            int     %10.0g     A15Y       Year
+a15h            byte    %10.0g     A15H       Hour
+a15min          byte    %10.0g     A15MIN     Minutes
+a16             byte    %17.0g     A16        Perception of The Questions
+                                                Regarding Opinions And
+                                                Perceptions
+a17             byte    %60.0g     A17        Responses To The Questions About
+                                                Figures Are…
+a18             byte    %65.0g     A18        This Questionnaire Was Completed
+                                                In:
+a19h            byte    %8.0g      A19H       If Option 2 or 3 In A.18,
+                                                Estimate Duration of The Whole
+                                                Interview: Hours
+a19m            byte    %8.0g      A19M       If Option 2 or 3 In A.18,
+                                                Estimate Duration of The Whole
+                                                Interview: Minutes
+a13             byte    %8.0g      A13        Supervisor Number
+a3b             byte    %8.0g      A3B        official Capital City?
+a3c             byte    %8.0g      A3C        Main Business City?
+a3              byte    %35.0g     A3         Size of Locality
+d1a2_v4         int     %8.0g      D1A2_V4    Main Product/Service ISIC (Rev.
+                                                4) Code
+stratific~ncode byte    %20.0g     StratificationRegionCode
+                                               stratification region code
+stratific~ecode byte    %22.0g     StratificationSizeCode
+                                              stratification size code
+stratific~rcode byte    %14.0g     StratificationSectorCode
+                                              stratification sector code
+stratific~lcode byte    %10.0g     StratificationPanelCode
+                                              panel code
+wstrict         float   %9.2f      WSTRICT    Weight according to strict
+                                                eligibility
+wmedian         float   %9.2f      WMEDIAN    Weight according to median
+                                                eligibility
+wweak           float   %9.2f      WWEAK      Weight according to weak
+                                                eligibility
+strata          byte    %10.0g     STRATA   * see notes
+b1_RWA          byte    %33.0g     b1_RWA     
+                                            * indicated variables have notes
+-------------------------------------------------------------------------------
+Sorted by: 
+
+. codebook h1 h2 h5 c22b l1 wmedian wstrict wweak a2 a3a a4a a6a k82 k162 k3a k
+> 3bc k33 b6
+
+-------------------------------------------------------------------------------
+h1                             New Products/Services Introduced Over Last 3 Yrs
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: H1
+
+                 Range: [1,2]                         Units: 1
+         Unique values: 2                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          238         1  Yes
+                          120         2  No
+
+-------------------------------------------------------------------------------
+h2           New Products/Services Also New For Thr Establishment'S Main Market
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: H2
+
+                 Range: [-9,2]                        Units: 1
+         Unique values: 3                         Missing .: 120/358
+
+            Tabulation: Freq.   Numeric  Label
+                            2        -9  Don't know (spontaneous)
+                          118         1  Yes
+                          118         2  No
+                          120         .  
+
+-------------------------------------------------------------------------------
+h5                                     During Last 3 Yrs, Establishment
+                                       Introduced New/Significantly Improved
+                                       Process
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: H5
+
+                 Range: [1,2]                         Units: 1
+         Unique values: 2                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          211         1  Yes
+                          147         2  No
+
+-------------------------------------------------------------------------------
+c22b                                          Establishment Has Its Own Website
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: C22B
+
+                 Range: [1,2]                         Units: 1
+         Unique values: 2                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          183         1  Yes
+                          175         2  No
+
+-------------------------------------------------------------------------------
+l1               Num. Permanent, Full-Time Employees At End of Last Fiscal Year
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (int)
+                 Label: L1, but 112 nonmissing values are not labeled
+
+                 Range: [-9,2100]                     Units: 1
+         Unique values: 113                       Missing .: 0/358
+
+              Examples: 6     
+                        12    
+                        25    
+                        59    
+
+-------------------------------------------------------------------------------
+wmedian                                  Weight according to median eligibility
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (float)
+                 Label: WMEDIAN, but label does not exist
+
+                 Range: [1,28.143141]                 Units: 1.000e-07
+         Unique values: 51                        Missing .: 0/358
+
+                  Mean:  7.1957
+             Std. dev.: 8.14651
+
+           Percentiles:     10%       25%       50%       75%       90%
+                              1   1.32772   2.19588   11.7443    20.163
+
+-------------------------------------------------------------------------------
+wstrict                                  Weight according to strict eligibility
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (float)
+                 Label: WSTRICT, but label does not exist
+
+                 Range: [1,27.43655]                  Units: 1.000e-07
+         Unique values: 53                        Missing .: 0/358
+
+                  Mean: 6.73155
+             Std. dev.: 7.83967
+
+           Percentiles:     10%       25%       50%       75%       90%
+                              1   1.23331   1.94402   10.8134   19.1657
+
+-------------------------------------------------------------------------------
+wweak                                      Weight according to weak eligibility
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (float)
+                 Label: WWEAK, but label does not exist
+
+                 Range: [1,32.544987]                 Units: 1.000e-07
+         Unique values: 53                        Missing .: 0/358
+
+                  Mean: 8.58439
+             Std. dev.: 9.55601
+
+           Percentiles:     10%       25%       50%       75%       90%
+                              1   1.65939   2.69944   14.3691   23.8555
+
+-------------------------------------------------------------------------------
+a2                                                              Sampling Region
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: A2
+
+                 Range: [1,3]                         Units: 1
+         Unique values: 3                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          124         1  Kigali
+                          116         2  Western and Northern
+                          118         3  Southern and Eastern
+
+-------------------------------------------------------------------------------
+a3a                                                 Region of The Establishment
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: A3A
+
+                 Range: [1,3]                         Units: 1
+         Unique values: 3                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          130         1  Kigali
+                          111         2  Western and Northern
+                          117         3  Southern and Eastern
+
+-------------------------------------------------------------------------------
+a4a                                                    Industry Sampling Sector
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: A4A
+
+                 Range: [1,3]                         Units: 1
+         Unique values: 3                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          120         1  Manufacturing
+                          100         2  Retail
+                          138         3  Other Services
+
+-------------------------------------------------------------------------------
+a6a                                                               Sampling Size
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: A6A
+
+                 Range: [1,3]                         Units: 1
+         Unique values: 3                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                          171         1  Small
+                          130         2  Medium
+                           57         3  Large
+
+-------------------------------------------------------------------------------
+k82    Establishment Has A Line of Credit or Loan From A Financial Institution?
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: K82
+
+                 Range: [-9,4]                        Units: 1
+         Unique values: 5                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                            2        -9  Don't know (spontaneous)
+                          166         1  Yes, a loan only
+                           16         2  Yes, a line of credit only
+                            9         3  Yes, both a line of credit and
+                                         a loan
+                          165         4  No
+
+-------------------------------------------------------------------------------
+k162         In Last FY, Did Establishment Apply For New Loans/Lines of Credit?
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: K162
+
+                 Range: [-9,4]                        Units: 1
+         Unique values: 5                         Missing .: 0/358
+
+            Tabulation: Freq.   Numeric  Label
+                            1        -9  Don't know (spontaneous)
+                          103         1  Yes, a loan only
+                           16         2  Yes, a line of credit only
+                           14         3  Yes, both a line of credit and
+                                         a loan
+                          224         4  No
+
+-------------------------------------------------------------------------------
+k3a         % of Working Capital Financed From Internal Funds/Retained Earnings
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: K3A, but 26 nonmissing values are not labeled
+
+                 Range: [0,100]                       Units: 1
+         Unique values: 26                        Missing .: 0/358
+
+              Examples: 50    
+                        70    
+                        80    
+                        100   
+
+-------------------------------------------------------------------------------
+k3bc                                   % of Working Capital Borrowed From Banks
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: K3BC, but 21 nonmissing values are not labeled
+
+                 Range: [0,100]                       Units: 1
+         Unique values: 21                        Missing .: 0/358
+
+              Examples: 0     
+                        0     
+                        15    
+                        35    
+
+-------------------------------------------------------------------------------
+k33                            Percentage of payments received using e-payments
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (byte)
+                 Label: K33, but 33 nonmissing values are not labeled
+
+                 Range: [-9,100]                      Units: 1
+         Unique values: 34                        Missing .: 0/358
+
+              Examples: 25    
+                        50    
+                        70    
+                        80    
+
+-------------------------------------------------------------------------------
+b6                                     Number of Full-Time Employees of The
+                                       Establishment When It Started Operations
+-------------------------------------------------------------------------------
+
+                  Type: Numeric (int)
+                 Label: B6, but 57 nonmissing values are not labeled
+
+                 Range: [-9,560]                      Units: 1
+         Unique values: 58                        Missing .: 0/358
+
+              Examples: 3     
+                        5     
+                        10    
+                        20    
+
+. 
+. log close
+      name:  <unnamed>
+       log:  D:/Research/LASSO/results/stata/logs/second_run_stata.log
+  log type:  text
+ closed on:  19 May 2026, 06:36:27
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  D:/Research/LASSO/results/stata/logs/second_run_stata.log
+  log type:  text
+ opened on:  19 May 2026, 06:36:27
+
+. 
+. gen long obs_id = _n
+
+. 
+. gen byte fragility_second_run = ///
+>     (h5 == 1 & l1 <= 3) | ///
+>     (h5 == 2 & c22b == 1 & l1 <= -2) | ///
+>     (h5 == 2 & c22b == 2 & (h1 == 2 | h2 != 1))
+
+. label define fragility_lbl 0 "Non-fragile" 1 "Fragile", replace
+
+. label values fragility_second_run fragility_lbl
+
+. 
+. preserve
+
+. keep obs_id fragility_second_run
+
+. tempfile rule
+
+. save `rule'
+file C:\Users\Simeon\AppData\Local\Temp\ST_f4_000002.tmp saved as .dta format
+
+. import delimited "$PROCESSED", clear
+(encoding automatically selected: ISO-8859-1)
+(2 vars, 358 obs)
+
+. gen long obs_id = _n
+
+. merge 1:1 obs_id using `rule', nogen
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                               358  
+    -----------------------------------------
+
+. gen byte match = fragility_risk_flex == fragility_second_run
+
+. export delimited using "$OUT/second_run_fragility_validation.csv", replace
+file D:/Research/LASSO/results/stata/second_run_fragility_validation.csv saved
+
+. collapse (count) n=match (sum) matches=match supplied_fragile=fragility_risk_
+> flex second_run_fragile=fragility_second_run
+
+. gen mismatches = n - matches
+
+. gen agreement = matches / n
+
+. export delimited using "$TABLES/second_run_fragility_validation_summary.csv",
+>  replace
+file D:/Research/LASSO/results/tables/second_run_fragility_validation_summary.c
+> sv saved
+
+. restore
+
+. 
+. preserve
+
+. keep h1 h2 h5 c22b l1 wmedian wstrict wweak a2 a3a a4a a6a k82 k162 k3a k3bc 
+> k33 b6
+
+. misstable summarize
+                                                               Obs<.
+                                                +------------------------------
+               |                                | Unique
+      Variable |     Obs=.     Obs>.     Obs<.  | values        Min         Max
+  -------------+--------------------------------+------------------------------
+            h2 |       120                 238  |      3         -9           2
+  -----------------------------------------------------------------------------
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+         a4a |        358    2.050279    .8486189          1          3
+         a6a |        358    1.681564    .7327824          1          3
+          a2 |        358     1.98324    .8231582          1          3
+         a3a |        358    1.963687     .830996          1          3
+          b6 |        358    24.16201    64.82981         -9        560
+-------------+---------------------------------------------------------
+        c22b |        358    1.488827    .5005748          1          2
+          h1 |        358    1.335196    .4727195          1          2
+          h2 |        238    1.411765    1.082362         -9          2
+          h5 |        358    1.410615    .4926339          1          2
+         k3a |        358    71.75978     25.2798          0        100
+-------------+---------------------------------------------------------
+        k3bc |        358    16.93017     23.4084          0        100
+         k82 |        358    2.421788    1.684756         -9          4
+        k162 |        358    2.972067    1.492953         -9          4
+         k33 |        358    57.01676     29.9887         -9        100
+          l1 |        358    64.98324    168.6036         -9       2100
+-------------+---------------------------------------------------------
+     wstrict |        358     6.73155    7.839669          1   27.43655
+     wmedian |        358    7.195703    8.146506          1   28.14314
+       wweak |        358    8.584389    9.556012          1   32.54499
+
+. restore
+
+. 
+. preserve
+
+. collapse ///
+>     (mean) unweighted=fragility_second_run ///
+>     [aw=wmedian]
+
+. gen approach = "wmedian"
+
+. rename unweighted fragility_pct
+
+. replace fragility_pct = fragility_pct * 100
+(1 real change made)
+
+. tempfile weighted
+
+. save `weighted'
+file C:\Users\Simeon\AppData\Local\Temp\ST_f4_000005.tmp saved as .dta format
+
+. restore
+
+. 
+. preserve
+
+. collapse (mean) fragility_pct=fragility_second_run
+
+. replace fragility_pct = fragility_pct * 100
+(1 real change made)
+
+. gen approach = "unweighted"
+
+. tempfile unweighted
+
+. save `unweighted'
+file C:\Users\Simeon\AppData\Local\Temp\ST_f4_000007.tmp saved as .dta format
+
+. restore
+
+. 
+. preserve
+
+. collapse (mean) fragility_pct=fragility_second_run [aw=wstrict]
+
+. replace fragility_pct = fragility_pct * 100
+(1 real change made)
+
+. gen approach = "wstrict"
+
+. append using `weighted'
+
+. append using `unweighted'
+(variable approach was str7, now str10 to accommodate using data's values)
+
+. tempfile prev
+
+. save `prev'
+file C:\Users\Simeon\AppData\Local\Temp\ST_f4_000009.tmp saved as .dta format
+
+. restore
+
+. 
+. preserve
+
+. collapse (mean) fragility_pct=fragility_second_run [aw=wweak]
+
+. replace fragility_pct = fragility_pct * 100
+(1 real change made)
+
+. gen approach = "wweak"
+
+. append using `prev'
+(variable approach was str5, now str10 to accommodate using data's values)
+
+. order approach fragility_pct
+
+. export delimited using "$OUT/second_run_weighted_prevalence.csv", replace
+file D:/Research/LASSO/results/stata/second_run_weighted_prevalence.csv saved
+
+. export delimited using "$TABLES/second_run_weighted_prevalence_stata.csv", re
+> place
+(file
+    D:/Research/LASSO/results/tables/second_run_weighted_prevalence_stata.csv
+    not found)
+file D:/Research/LASSO/results/tables/second_run_weighted_prevalence_stata.csv 
+> saved
+
+. graph hbar fragility_pct, over(approach, sort(1)) ///
+>     ytitle("Fragility (%)") ///
+>     title("Weighted and unweighted fragility prevalence")
+
+. graph export "$FIGS/stata_weighted_unweighted_prevalence.png", replace width(
+> 1800)
+(file
+    D:/Research/LASSO/results/figures/second_run/stata_weighted_unweighted_pr
+    > evalence.png not found)
+file
+    D:/Research/LASSO/results/figures/second_run/stata_weighted_unweighted_pr
+    > evalence.png saved as PNG format
+
+. restore
+
+. 
+. foreach group in a2 a4a a6a c22b h5 {
+  2.     preserve
+  3.     collapse ///
+>         (count) n=fragility_second_run ///
+>         (mean) unweighted_fragility_pct=fragility_second_run ///
+>         [aw=wmedian], by(`group')
+  4.     replace unweighted_fragility_pct = unweighted_fragility_pct * 100
+  5.     decode `group', gen(group_label)
+  6.     export delimited using "$OUT/second_run_`group'_table.csv", replace
+  7.     graph hbar unweighted_fragility_pct, over(group_label, sort(1)) ///
+>         ytitle("Weighted fragility (%)") ///
+>         title("Weighted fragility by `group'")
+  8.     graph export "$FIGS/stata_fragility_by_`group'.png", replace width(180
+> 0)
+  9.     restore
+ 10. }
+(note: aweights not used to compute counts)
+(3 real changes made)
+(file D:/Research/LASSO/results/stata/second_run_a2_table.csv not found)
+file D:/Research/LASSO/results/stata/second_run_a2_table.csv saved
+(file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_a2.png
+    not found)
+file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_a2.png
+    saved as PNG format
+(note: aweights not used to compute counts)
+(3 real changes made)
+(file D:/Research/LASSO/results/stata/second_run_a4a_table.csv not found)
+file D:/Research/LASSO/results/stata/second_run_a4a_table.csv saved
+(file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_a4a.png
+    not found)
+file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_a4a.png
+    saved as PNG format
+(note: aweights not used to compute counts)
+(3 real changes made)
+(file D:/Research/LASSO/results/stata/second_run_a6a_table.csv not found)
+file D:/Research/LASSO/results/stata/second_run_a6a_table.csv saved
+(file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_a6a.png
+    not found)
+file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_a6a.png
+    saved as PNG format
+(note: aweights not used to compute counts)
+(2 real changes made)
+(file D:/Research/LASSO/results/stata/second_run_c22b_table.csv not found)
+file D:/Research/LASSO/results/stata/second_run_c22b_table.csv saved
+(file
+    D:/Research/LASSO/results/figures/second_run/stata_fragility_by_c22b.png
+    not found)
+file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_c22b.png
+    saved as PNG format
+(note: aweights not used to compute counts)
+(2 real changes made)
+(file D:/Research/LASSO/results/stata/second_run_h5_table.csv not found)
+file D:/Research/LASSO/results/stata/second_run_h5_table.csv saved
+(file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_h5.png
+    not found)
+file D:/Research/LASSO/results/figures/second_run/stata_fragility_by_h5.png
+    saved as PNG format
+
+. 
+. display "Second run completed: $S_DATE $S_TIME"
+Second run completed: 19 May 2026 06:36:41
+
+. log close
+      name:  <unnamed>
+       log:  D:/Research/LASSO/results/stata/logs/second_run_stata.log
+  log type:  text
+ closed on:  19 May 2026, 06:36:41
+-------------------------------------------------------------------------------

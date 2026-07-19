@@ -1,0 +1,24 @@
+variable,label,non_missing,missing_pct,unique_values
+h1,New Products/Services Introduced Over Last 3 Yrs,358,0.0,2
+h2,New Products/Services Also New For Thr Establishment'S Main Market,238,33.52,3
+h5,"During Last 3 Yrs, Establishment Introduced New/Significantly Improved Process",358,0.0,2
+h8,"During Last Fiscal Year, Establishment Spent On R&D (Excl Market Research)?",358,0.0,2
+k82,Establishment Has A Line of Credit or Loan From A Financial Institution?,358,0.0,5
+k162,"In Last FY, Did Establishment Apply For New Loans/Lines of Credit?",358,0.0,5
+k3a,% of Working Capital Financed From Internal Funds/Retained Earnings,358,0.0,26
+k3bc,% of Working Capital Borrowed From Banks,358,0.0,21
+c22b,Establishment Has Its Own Website,358,0.0,2
+k33,Percentage of payments received using e-payments,358,0.0,34
+a2,Sampling Region,358,0.0,3
+a3a,Region of The Establishment,358,0.0,3
+a4a,Industry Sampling Sector,358,0.0,3
+a6a,Sampling Size,358,0.0,3
+b6,Number of Full-Time Employees of The Establishment When It Started Operations,358,0.0,58
+wmedian,Weight according to median eligibility,358,0.0,51
+wstrict,Weight according to strict eligibility,358,0.0,53
+wweak,Weight according to weak eligibility,358,0.0,53
+m1a,Biggest Obstacle Affecting The Operation of This Establishment,358,0.0,17
+j30a,How Much of An Obstacle: Tax Rates,358,0.0,5
+l1,"Num. Permanent, Full-Time Employees At End of Last Fiscal Year",358,0.0,113
+r1,What Happened When Problem In The Production Process/Services Provision Arose?,181,49.44,6
+ge3,Experience damage of physical assets due to extreme weather events?,358,0.0,2

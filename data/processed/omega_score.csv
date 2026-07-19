@@ -1,0 +1,359 @@
+fragility_risk_flex,omega_score,h1,h2,h5,h8,k82,k162,k3a,k3bc,c22b,k33,a4a,a6a,b6
+0,0.1731844,No,,No,No,No,No,100,0,Yes,70,Manufacturing,Medium,7
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, a loan only","Yes, a loan only",30,70,Yes,80,Retail,Medium,4
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",0,0,No,40,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,0,Other Services,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",80,0,No,80,Other Services,Small,14
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,80,0,No,40,Manufacturing,Small,11
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,80,Other Services,Medium,6
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a line of credit only",No,80,0,Yes,40,Retail,Medium,20
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,75,25,Yes,80,Manufacturing,Medium,20
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,10,90,No,100,Manufacturing,Small,5
+0,0.1731844,Yes,No,No,No,No,No,100,0,Yes,80,Other Services,Small,4
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,60,40,No,30,Retail,Small,3
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",50,30,Yes,10,Other Services,Medium,9
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,45,Other Services,Large,58
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",100,0,No,100,Retail,Medium,40
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,100,0,No,55,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, a loan only","Yes, a loan only",30,70,No,100,Manufacturing,Small,2
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only","Yes, a loan only",50,0,No,30,Other Services,Small,1
+0,0.1731844,No,,No,No,No,No,70,30,Yes,80,Other Services,Medium,12
+0,0.1731844,Yes,Yes,No,No,No,No,100,0,Yes,90,Other Services,Medium,30
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,90,Other Services,Medium,16
+0,0.1731844,No,,No,No,No,No,100,0,Yes,2,Manufacturing,Medium,2
+0,0.1731844,Yes,No,Yes,No,No,No,70,30,No,1,Other Services,Small,2
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,100,0,Yes,100,Manufacturing,Large,560
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, a loan only",No,60,0,Yes,80,Other Services,Small,6
+0,0.1731844,No,,Yes,No,"Yes, both a line of credit and a loan","Yes, a loan only",10,90,Yes,50,Retail,Large,15
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",50,0,No,55,Manufacturing,Medium,10
+0,0.1731844,No,,No,No,No,No,100,0,Yes,80,Other Services,Medium,25
+0,0.1731844,No,,Yes,No,No,No,100,0,Yes,60,Other Services,Medium,31
+0,0.1731844,No,,No,No,No,"Yes, both a line of credit and a loan",70,30,Yes,80,Other Services,Medium,21
+0,0.1731844,No,,No,No,No,"Yes, both a line of credit and a loan",70,30,Yes,70,Other Services,Large,30
+0,0.1731844,Yes,No,Yes,Yes,No,No,60,30,No,90,Retail,Small,6
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",60,0,No,10,Retail,Small,2
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only",No,50,40,No,90,Manufacturing,Large,40
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,70,30,No,60,Other Services,Medium,10
+0,0.1731844,No,,Yes,No,No,"Yes, a line of credit only",80,0,Yes,35,Retail,Small,4
+0,0.1731844,No,,No,Yes,"Yes, a loan only",No,70,0,Yes,80,Retail,Medium,5
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",60,20,No,3,Manufacturing,Large,5
+0,0.1731844,Yes,Yes,No,No,"Yes, a line of credit only","Yes, a loan only",70,10,Yes,100,Other Services,Medium,6
+0,0.1731844,No,,Yes,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,80,Retail,Small,1
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, both a line of credit and a loan",52,28,Yes,20,Manufacturing,Large,8
+0,0.1731844,No,,Yes,No,No,"Yes, a loan only",80,0,Yes,35,Retail,Medium,7
+0,0.1731844,Yes,Yes,No,Yes,"Yes, a loan only","Yes, both a line of credit and a loan",60,40,Yes,15,Retail,Large,56
+0,0.1731844,No,,No,No,No,No,100,0,Yes,30,Retail,Small,4
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",100,0,Yes,70,Other Services,Medium,8
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",45,20,Yes,90,Manufacturing,Medium,35
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a line of credit only",60,40,Yes,40,Other Services,Medium,40
+0,0.1731844,Yes,Yes,No,No,No,No,20,0,No,2,Manufacturing,Small,3
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",75,0,No,55,Manufacturing,Small,4
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, a loan only","Yes, a loan only",30,70,No,95,Manufacturing,Large,160
+0,0.1731844,Yes,No,No,No,"Yes, both a line of credit and a loan",No,100,0,Yes,95,Manufacturing,Large,110
+0,0.1731844,Yes,No,Yes,Yes,"Yes, a loan only","Yes, a loan only",80,20,Yes,98,Other Services,Large,80
+0,0.1731844,Yes,Yes,Yes,No,No,No,70,0,Yes,75,Other Services,Small,12
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,70,Other Services,Medium,8
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,75,0,Yes,75,Other Services,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a line of credit only",35,60,Yes,75,Other Services,Large,4
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a line of credit only",100,0,No,80,Other Services,Large,120
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, a loan only","Yes, a line of credit only",60,40,Yes,98,Manufacturing,Large,Don't know (spontaneous)
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a line of credit only",70,30,Yes,75,Retail,Medium,50
+0,0.1731844,Yes,No,Yes,No,No,No,70,0,No,50,Retail,Small,4
+0,0.1731844,No,,No,No,No,"Yes, a loan only",80,15,Yes,90,Retail,Small,3
+0,0.1731844,No,,No,No,"Yes, a loan only",No,60,40,Yes,4,Manufacturing,Medium,12
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,30,60,No,40,Retail,Small,4
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",40,60,No,50,Retail,Small,6
+0,0.1731844,No,,No,No,No,No,100,0,Yes,70,Manufacturing,Small,2
+0,0.1731844,No,,No,No,No,No,100,0,Yes,20,Manufacturing,Small,6
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, a loan only","Yes, a loan only",90,5,Yes,90,Manufacturing,Large,15
+0,0.1731844,No,,No,No,No,No,100,0,Yes,75,Other Services,Medium,14
+0,0.1731844,No,,No,No,No,No,85,0,Yes,60,Other Services,Medium,10
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,20,80,No,95,Other Services,Large,Don't know (spontaneous)
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,40,Manufacturing,Large,40
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,90,10,Yes,95,Manufacturing,Medium,Don't know (spontaneous)
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a loan only",60,25,Yes,60,Retail,Medium,5
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a line of credit only",No,70,20,Yes,80,Retail,Medium,15
+0,0.1731844,Yes,No,Yes,No,"Yes, a line of credit only","Yes, a line of credit only",25,75,No,95,Manufacturing,Medium,24
+0,0.1731844,No,,No,Yes,No,"Yes, a loan only",60,30,Yes,Don't know (spontaneous),Other Services,Medium,5
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,60,Retail,Small,6
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,65,25,No,50,Retail,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,90,10,Yes,68,Other Services,Large,78
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,50,0,Yes,80,Manufacturing,Small,3
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,90,Manufacturing,Large,486
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,90,Manufacturing,Medium,6
+0,0.1731844,Yes,Yes,No,No,"Yes, a line of credit only","Yes, a line of credit only",72,0,Yes,30,Manufacturing,Medium,5
+0,0.1731844,Yes,No,Yes,No,"Yes, both a line of credit and a loan","Yes, a loan only",25,60,No,80,Manufacturing,Large,156
+0,0.1731844,No,,No,No,No,No,100,0,Yes,20,Manufacturing,Large,12
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,85,0,Yes,70,Manufacturing,Small,10
+0,0.1731844,Yes,Don't know (spontaneous),Yes,No,"Yes, a loan only",No,80,20,Yes,89,Manufacturing,Large,150
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,70,Manufacturing,Medium,25
+0,0.1731844,Yes,No,Yes,Yes,"Yes, a loan only",No,30,50,No,60,Manufacturing,Medium,2
+0,0.1731844,Yes,No,Yes,No,No,No,85,0,Yes,75,Retail,Medium,11
+0,0.1731844,Yes,No,Yes,No,"Yes, a line of credit only","Yes, a loan only",70,30,Yes,78,Retail,Medium,5
+0,0.1731844,No,,Yes,No,No,No,100,0,Yes,70,Manufacturing,Small,30
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a loan only",70,0,No,55,Manufacturing,Large,42
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",70,0,Yes,99,Manufacturing,Medium,250
+0,0.1731844,Yes,No,No,No,No,"Yes, both a line of credit and a loan",97,0,Yes,20,Manufacturing,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",100,0,Yes,80,Other Services,Medium,10
+0,0.1731844,Yes,Yes,Yes,No,No,"Yes, a line of credit only",70,30,No,10,Retail,Small,3
+0,0.1731844,Yes,Yes,Yes,Yes,No,No,100,0,Yes,10,Manufacturing,Medium,6
+0,0.1731844,Yes,No,Yes,No,No,No,10,0,No,Don't know (spontaneous),Retail,Medium,2
+0,0.1731844,No,,No,No,No,"Yes, a loan only",70,20,Yes,70,Other Services,Medium,15
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,70,30,No,60,Manufacturing,Medium,15
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,80,0,Yes,50,Other Services,Medium,16
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,80,Other Services,Medium,8
+0,0.1731844,Yes,No,Yes,Yes,"Yes, a loan only","Yes, a loan only",70,30,No,75,Other Services,Small,3
+0,0.1731844,Yes,Yes,Yes,No,No,No,70,18,Yes,45,Manufacturing,Medium,17
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,100,0,Yes,100,Other Services,Large,102
+0,0.1731844,Yes,No,Yes,No,No,No,95,0,Yes,95,Other Services,Medium,25
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,70,Manufacturing,Small,1
+0,0.1731844,No,,No,No,No,No,100,0,Yes,1,Manufacturing,Medium,2
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",80,20,No,35,Retail,Small,3
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,80,Other Services,Small,3
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,60,Other Services,Medium,24
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,70,30,No,95,Manufacturing,Medium,Don't know (spontaneous)
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a loan only",65,0,No,60,Manufacturing,Small,11
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",30,40,No,40,Other Services,Small,5
+0,0.1731844,No,,No,No,"Yes, a loan only",No,40,0,Yes,80,Manufacturing,Small,4
+0,0.1731844,No,,No,No,No,No,80,0,Yes,60,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,5,Manufacturing,Medium,5
+0,0.1731844,Yes,Yes,Yes,No,No,No,45,35,Yes,10,Manufacturing,Large,5
+0,0.1731844,Yes,No,Yes,No,Don't know (spontaneous),No,100,0,No,50,Other Services,Medium,Don't know (spontaneous)
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",90,10,No,85,Retail,Small,5
+0,0.1731844,Yes,Yes,No,No,"Yes, a line of credit only",No,85,0,Yes,40,Manufacturing,Small,3
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,25,75,Yes,75,Other Services,Medium,10
+0,0.1731844,No,,Yes,No,No,No,80,0,Yes,80,Manufacturing,Large,95
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",0,80,No,40,Manufacturing,Medium,2
+0,0.1731844,No,,No,No,No,No,100,0,Yes,40,Retail,Small,7
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",50,50,No,75,Retail,Small,4
+0,0.1731844,Yes,No,Yes,No,No,No,95,0,Yes,95,Retail,Small,4
+0,0.1731844,No,,No,No,No,No,100,0,Yes,25,Other Services,Small,37
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,70,30,Yes,93,Other Services,Medium,16
+0,0.1731844,Yes,Yes,No,No,No,No,40,0,Yes,60,Other Services,Small,4
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",60,40,No,70,Retail,Small,4
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,70,Other Services,Large,350
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only","Yes, both a line of credit and a loan",20,70,Yes,95,Other Services,Small,15
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,70,30,Yes,90,Other Services,Large,300
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",0,100,No,20,Retail,Small,4
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,40,Retail,Small,5
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,50,50,Yes,60,Other Services,Medium,20
+0,0.1731844,Yes,Yes,No,No,No,"Yes, a loan only",50,0,No,90,Other Services,Medium,7
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,70,30,Yes,95,Manufacturing,Medium,6
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",60,40,Yes,10,Other Services,Large,6
+0,0.1731844,Yes,Yes,Yes,No,No,No,90,0,No,2,Other Services,Small,35
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,45,Retail,Small,2
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",65,20,Yes,80,Manufacturing,Large,50
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",50,0,No,80,Retail,Small,1
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,60,Manufacturing,Small,6
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,1,Other Services,Small,2
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,40,Manufacturing,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,60,40,No,40,Manufacturing,Medium,15
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,60,40,No,60,Manufacturing,Medium,10
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,70,25,Yes,80,Manufacturing,Medium,5
+0,0.1731844,Yes,Yes,Yes,No,No,No,75,0,No,65,Retail,Small,8
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only",No,0,100,Yes,100,Manufacturing,Large,50
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,70,Other Services,Medium,18
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, both a line of credit and a loan",60,40,Yes,3,Manufacturing,Large,20
+0,0.1731844,No,,Yes,No,"Yes, a loan only",No,75,20,Yes,1,Manufacturing,Large,30
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",60,0,Yes,80,Other Services,Medium,3
+0,0.1731844,Yes,Yes,Yes,No,No,"Yes, a loan only",65,10,Yes,60,Retail,Medium,10
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",85,15,Yes,80,Manufacturing,Large,2
+0,0.1731844,No,,Yes,No,"Yes, both a line of credit and a loan",No,10,90,No,2,Manufacturing,Small,2
+0,0.1731844,No,,No,No,No,No,80,0,Yes,30,Other Services,Medium,32
+0,0.1731844,Yes,Yes,No,No,"Yes, both a line of credit and a loan","Yes, a loan only",100,0,Yes,50,Other Services,Large,10
+0,0.1731844,Yes,Yes,Yes,No,No,"Yes, a loan only",40,60,Yes,85,Retail,Small,5
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",50,50,No,70,Other Services,Small,3
+0,0.1731844,No,,No,No,"Yes, a loan only",No,50,50,Yes,50,Manufacturing,Medium,16
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,80,Other Services,Medium,10
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a loan only",60,0,No,20,Retail,Medium,6
+0,0.1731844,Yes,Yes,Yes,No,No,No,70,0,No,40,Manufacturing,Medium,5
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only","Yes, a line of credit only",50,40,No,50,Other Services,Small,5
+0,0.1731844,Yes,Yes,Yes,No,No,No,80,0,Yes,70,Retail,Medium,15
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,30,70,No,20,Retail,Small,2
+0,0.1731844,No,,No,No,No,No,65,35,Yes,60,Other Services,Medium,18
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",60,0,Yes,50,Retail,Medium,5
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,80,0,Yes,100,Manufacturing,Medium,360
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",60,40,Yes,90,Manufacturing,Medium,5
+0,0.1731844,No,,Yes,No,"Yes, a loan only","Yes, a line of credit only",70,25,No,30,Manufacturing,Small,12
+0,0.1731844,No,,No,No,No,No,90,0,Yes,75,Other Services,Small,5
+0,0.1731844,No,,No,No,No,No,100,0,Yes,30,Other Services,Small,3
+0,0.1731844,Yes,No,Yes,No,No,No,80,0,No,15,Retail,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",60,0,No,15,Retail,Small,1
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,85,0,No,55,Other Services,Small,4
+0,0.1731844,No,,Yes,No,No,No,100,0,Yes,95,Retail,Large,95
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,40,Other Services,Medium,57
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,80,20,No,45,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,30,Retail,Medium,40
+0,0.1731844,No,,No,Yes,"Yes, a loan only","Yes, a loan only",60,20,Yes,70,Other Services,Medium,45
+0,0.1731844,Yes,Yes,Yes,Yes,No,No,60,25,Yes,70,Other Services,Large,37
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,60,40,Yes,25,Manufacturing,Medium,20
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,55,45,Yes,85,Retail,Small,14
+0,0.1731844,Yes,Yes,No,No,No,No,75,25,Yes,80,Other Services,Small,20
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",30,60,No,10,Manufacturing,Medium,40
+0,0.1731844,Yes,Yes,No,Yes,No,No,100,0,No,5,Other Services,Small,14
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, both a line of credit and a loan","Yes, both a line of credit and a loan",70,30,Yes,100,Manufacturing,Small,10
+0,0.1731844,Yes,Yes,No,No,No,No,60,0,No,50,Other Services,Small,2
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,70,Other Services,Medium,15
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,60,Manufacturing,Small,5
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a line of credit only","Yes, a loan only",60,5,Yes,65,Retail,Medium,11
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,80,Other Services,Small,10
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",40,40,No,80,Other Services,Small,5
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,60,Retail,Small,3
+0,0.1731844,No,,No,No,"Yes, a loan only",No,80,20,Yes,80,Manufacturing,Medium,8
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only","Yes, a loan only",100,0,No,100,Other Services,Small,5
+0,0.1731844,No,,Yes,No,"Yes, a loan only",No,100,0,Yes,90,Other Services,Large,205
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,40,Other Services,Medium,12
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a loan only",80,20,Yes,95,Other Services,Large,150
+0,0.1731844,Yes,No,Yes,No,No,No,70,0,No,40,Manufacturing,Medium,10
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",30,70,No,90,Other Services,Small,2
+0,0.1731844,Yes,Yes,No,No,No,"Yes, a loan only",85,15,Yes,55,Retail,Medium,17
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only",No,60,0,No,Don't know (spontaneous),Manufacturing,Medium,50
+0,0.1731844,Yes,Yes,Yes,Yes,"Yes, both a line of credit and a loan","Yes, both a line of credit and a loan",80,20,Yes,2,Other Services,Large,10
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",85,15,No,50,Retail,Small,3
+0,0.1731844,Yes,No,Yes,Yes,"Yes, both a line of credit and a loan","Yes, a loan only",18,80,Yes,40,Retail,Large,16
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,30,Yes,20,Retail,Large,15
+0,0.1731844,No,,No,No,No,No,100,0,Yes,70,Retail,Small,5
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",45,55,Yes,80,Other Services,Large,48
+0,0.1731844,No,,Yes,No,"Yes, a loan only",No,90,10,Yes,70,Manufacturing,Large,50
+0,0.1731844,No,,No,No,"Yes, a loan only",No,80,20,Yes,70,Manufacturing,Large,7
+0,0.1731844,Yes,No,Yes,No,No,No,90,0,Yes,85,Other Services,Small,12
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,60,40,No,60,Retail,Small,8
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",50,50,Yes,50,Retail,Small,6
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only","Yes, a loan only",80,5,Yes,10,Other Services,Medium,4
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a line of credit only","Yes, a loan only",100,0,No,80,Other Services,Small,1
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,65,Retail,Medium,10
+0,0.1731844,Yes,No,Yes,Yes,"Yes, both a line of credit and a loan",No,30,70,Yes,98,Manufacturing,Large,456
+0,0.1731844,Yes,Yes,Yes,No,No,"Yes, a loan only",40,60,No,70,Other Services,Small,2
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,85,Other Services,Medium,25
+0,0.1731844,Yes,No,No,No,No,No,100,0,Yes,80,Other Services,Small,6
+0,0.1731844,Yes,Yes,No,Yes,No,No,92,0,No,75,Manufacturing,Medium,4
+0,0.1731844,No,,No,No,No,No,100,0,Yes,30,Manufacturing,Large,480
+0,0.1731844,No,,Yes,No,No,No,50,0,Yes,75,Retail,Small,8
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only",No,50,0,Yes,30,Manufacturing,Small,2
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,80,Retail,Medium,2
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,85,Retail,Small,14
+0,0.1731844,Yes,Yes,No,No,No,No,100,0,Yes,96,Other Services,Medium,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,50,0,No,50,Manufacturing,Small,2
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,90,Other Services,Small,5
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,20,Retail,Medium,9
+0,0.1731844,Yes,Yes,No,No,"Yes, a line of credit only","Yes, a loan only",60,10,Yes,100,Other Services,Large,20
+0,0.1731844,Yes,No,Yes,No,No,No,60,0,Yes,80,Other Services,Small,18
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",40,60,Yes,100,Manufacturing,Medium,6
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,Yes,95,Other Services,Medium,Don't know (spontaneous)
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a line of credit only",No,80,20,Yes,30,Manufacturing,Large,80
+0,0.1731844,Yes,Yes,Yes,No,No,No,70,0,No,2,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",50,50,Yes,20,Retail,Small,2
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,75,Retail,Small,7
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,100,0,Yes,92,Other Services,Medium,29
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,70,20,No,65,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a line of credit only","Yes, a loan only",60,0,No,20,Manufacturing,Small,4
+0,0.1731844,Yes,No,No,No,No,No,80,0,Yes,99,Manufacturing,Medium,13
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",80,10,No,50,Retail,Medium,18
+0,0.1731844,No,,No,No,No,"Yes, a line of credit only",100,0,Yes,50,Retail,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,75,0,No,25,Retail,Small,2
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only",No,0,0,No,50,Other Services,Small,3
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,70,Other Services,Medium,45
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",60,30,No,20,Retail,Small,3
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,90,Retail,Small,3
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",100,0,No,90,Manufacturing,Medium,4
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a loan only",60,0,No,45,Retail,Small,2
+0,0.1731844,No,,No,No,No,No,70,0,Yes,90,Retail,Small,5
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,55,Other Services,Medium,25
+0,0.1731844,Yes,No,Yes,Yes,"Yes, a loan only",Don't know (spontaneous),60,40,No,80,Manufacturing,Medium,11
+0,0.1731844,No,,Yes,No,"Yes, a loan only","Yes, a loan only",70,0,No,30,Retail,Small,1
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,75,Manufacturing,Medium,25
+0,0.1731844,No,,Yes,No,"Yes, a loan only","Yes, both a line of credit and a loan",20,80,Yes,10,Manufacturing,Medium,15
+0,0.1731844,No,,No,No,"Yes, a loan only",No,70,30,Yes,70,Other Services,Medium,10
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,Yes,95,Other Services,Medium,21
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",30,50,Yes,75,Other Services,Large,15
+0,0.1731844,Yes,No,Yes,No,No,No,90,0,Yes,70,Retail,Medium,30
+0,0.1731844,Yes,No,Yes,No,No,No,60,0,No,45,Other Services,Small,7
+0,0.1731844,No,,Yes,No,"Yes, a loan only","Yes, a loan only",15,85,Yes,90,Manufacturing,Large,16
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,100,0,Yes,99,Manufacturing,Medium,26
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",50,30,Yes,100,Manufacturing,Large,58
+0,0.1731844,No,,No,No,No,No,100,0,Yes,70,Retail,Small,4
+0,0.1731844,Yes,Yes,Yes,No,No,No,90,0,No,80,Other Services,Small,3
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,60,0,No,65,Manufacturing,Small,4
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,15,Retail,Small,5
+0,0.1731844,No,,No,No,"Yes, a loan only",No,60,40,Yes,10,Manufacturing,Medium,15
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,75,25,No,40,Retail,Small,2
+0,0.1731844,Yes,No,No,No,No,No,100,0,Yes,70,Other Services,Small,16
+0,0.1731844,Yes,No,Yes,No,"Yes, a line of credit only","Yes, both a line of credit and a loan",60,40,No,5,Retail,Small,3
+0,0.1731844,Yes,Yes,Yes,No,No,No,100,0,No,60,Manufacturing,Small,20
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",70,0,No,60,Other Services,Small,5
+0,0.1731844,Yes,Yes,No,No,"Yes, a loan only","Yes, a loan only",50,35,No,80,Other Services,Small,13
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",80,0,No,20,Retail,Small,3
+0,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",60,40,Yes,30,Retail,Small,10
+0,0.1731844,Yes,Yes,No,Yes,"Yes, a loan only","Yes, both a line of credit and a loan",70,30,Yes,90,Manufacturing,Large,100
+0,0.1731844,Yes,No,No,No,No,No,100,0,Yes,80,Other Services,Small,12
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a loan only",60,0,Yes,70,Other Services,Small,4
+0,0.1731844,Yes,Yes,Yes,No,No,No,80,0,Yes,15,Manufacturing,Small,7
+0,0.1731844,No,,Yes,No,"Yes, a line of credit only","Yes, a line of credit only",70,20,Yes,30,Other Services,Medium,18
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only",No,40,0,No,30,Other Services,Medium,40
+0,0.1731844,Yes,No,Yes,No,No,"Yes, a line of credit only",70,20,No,70,Manufacturing,Small,5
+0,0.1731844,Yes,No,Yes,No,No,No,100,0,No,78,Retail,Small,4
+0,0.1731844,Yes,Yes,No,No,No,No,70,30,Yes,80,Other Services,Small,5
+0,0.1731844,Yes,No,Yes,No,"Yes, a loan only","Yes, a loan only",50,50,No,10,Retail,Small,2
+0,0.1731844,Yes,Yes,Yes,No,"Yes, a loan only","Yes, a line of credit only",70,0,Yes,30,Manufacturing,Small,11
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",65,0,No,55,Manufacturing,Medium,5
+1,0.1731844,No,,No,No,No,No,70,10,No,100,Manufacturing,Small,4
+1,0.1731844,No,,No,No,No,No,30,0,No,70,Other Services,Small,6
+1,0.1731844,No,,No,No,No,No,100,0,No,40,Other Services,Small,5
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,30,No,60,Other Services,Small,6
+1,0.1731844,No,,No,No,No,"Yes, a loan only",70,10,No,10,Manufacturing,Medium,2
+1,0.1731844,No,,No,No,No,No,100,0,No,5,Manufacturing,Medium,5
+1,0.1731844,No,,No,No,No,No,100,0,No,5,Manufacturing,Medium,10
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",60,40,No,3,Manufacturing,Medium,3
+1,0.1731844,No,,No,No,No,No,80,0,No,5,Other Services,Small,3
+1,0.1731844,No,,No,No,"Yes, a loan only",No,80,0,No,70,Other Services,Small,4
+1,0.1731844,Yes,No,No,No,No,No,90,0,No,90,Other Services,Small,5
+1,0.1731844,No,,No,No,"Yes, a loan only",No,70,30,No,30,Other Services,Medium,60
+1,0.1731844,Yes,No,No,No,"Yes, a loan only","Yes, a loan only",10,90,No,60,Other Services,Small,3
+1,0.1731844,Yes,No,No,No,Don't know (spontaneous),No,100,0,No,25,Retail,Small,4
+1,0.1731844,No,,No,No,No,No,70,0,No,20,Manufacturing,Medium,10
+1,0.1731844,Yes,No,No,No,"Yes, a loan only","Yes, both a line of credit and a loan",39,10,No,10,Other Services,Large,20
+1,0.1731844,No,,No,No,"Yes, a loan only",No,0,60,No,90,Other Services,Medium,8
+1,0.1731844,No,,No,No,No,No,40,0,No,80,Other Services,Medium,50
+1,0.1731844,No,,No,No,No,No,50,50,No,80,Other Services,Small,6
+1,0.1731844,Yes,No,Yes,No,No,No,85,10,No,75,Retail,Small,1
+1,0.1731844,No,,No,No,"Yes, a loan only",No,70,30,No,70,Other Services,Large,4
+1,0.1731844,No,,No,No,"Yes, a loan only",No,80,0,No,70,Other Services,Small,2
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",50,50,No,20,Manufacturing,Medium,6
+1,0.1731844,No,,No,No,No,No,100,0,No,65,Manufacturing,Small,2
+1,0.1731844,No,,No,No,"Yes, a line of credit only",No,50,50,No,20,Retail,Large,30
+1,0.1731844,No,,No,No,No,No,100,0,No,50,Retail,Medium,5
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",70,0,No,60,Other Services,Small,6
+1,0.1731844,No,,No,No,No,No,100,0,No,2,Retail,Small,3
+1,0.1731844,Yes,No,No,No,No,No,0,0,No,100,Manufacturing,Medium,17
+1,0.1731844,No,,No,No,No,No,100,0,No,40,Other Services,Small,4
+1,0.1731844,No,,No,No,"Yes, a loan only",No,50,40,No,45,Other Services,Small,4
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, both a line of credit and a loan",30,50,No,10,Manufacturing,Small,3
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",65,35,No,5,Manufacturing,Medium,48
+1,0.1731844,Yes,No,No,No,"Yes, a loan only",No,80,20,No,70,Retail,Small,2
+1,0.1731844,No,,No,Yes,"Yes, a loan only",No,60,40,No,30,Manufacturing,Medium,10
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",60,20,No,60,Manufacturing,Medium,10
+1,0.1731844,No,,No,No,No,No,60,40,No,70,Retail,Small,1
+1,0.1731844,No,,No,No,No,No,100,0,No,40,Other Services,Small,5
+1,0.1731844,No,,No,No,No,No,100,0,No,3,Manufacturing,Small,6
+1,0.1731844,Yes,No,No,No,"Yes, a line of credit only","Yes, a line of credit only",55,0,No,20,Manufacturing,Small,4
+1,0.1731844,No,,No,No,No,No,50,0,No,20,Other Services,Small,6
+1,0.1731844,No,,No,No,No,No,100,0,No,70,Manufacturing,Medium,10
+1,0.1731844,No,,No,No,No,No,100,0,No,10,Other Services,Medium,8
+1,0.1731844,No,,No,No,No,No,100,0,No,15,Other Services,Small,1
+1,0.1731844,No,,No,No,No,No,45,0,No,100,Retail,Small,30
+1,0.1731844,No,,No,No,"Yes, a loan only",No,60,40,No,60,Manufacturing,Small,6
+1,0.1731844,Yes,Don't know (spontaneous),No,No,No,No,100,0,Yes,100,Other Services,Small,8
+1,0.1731844,No,,No,No,"Yes, a loan only","Yes, a loan only",60,0,No,30,Retail,Small,5
+1,0.1731844,No,,No,No,No,No,100,0,No,50,Manufacturing,Small,6
+1,0.1731844,No,,No,No,No,No,100,0,No,20,Manufacturing,Medium,6
+1,0.1731844,Yes,No,No,No,No,No,80,0,No,90,Retail,Small,3
+1,0.1731844,No,,No,No,"Yes, a loan only",No,65,35,No,100,Other Services,Large,30
+1,0.1731844,No,,No,No,"Yes, a loan only",No,50,40,No,70,Other Services,Small,4
+1,0.1731844,No,,No,No,No,No,60,0,No,70,Other Services,Small,3
+1,0.1731844,No,,No,No,No,No,100,0,No,5,Other Services,Small,1
+1,0.1731844,No,,No,No,No,No,100,0,No,60,Retail,Small,7
+1,0.1731844,No,,No,No,No,No,80,0,No,50,Retail,Small,2
+1,0.1731844,No,,No,No,No,No,50,30,No,65,Other Services,Small,5
+1,0.1731844,Yes,No,No,No,No,No,100,0,No,60,Retail,Small,7
+1,0.1731844,No,,No,No,No,No,70,0,No,80,Other Services,Small,5
+1,0.1731844,No,,No,No,No,No,100,0,No,5,Other Services,Small,2

@@ -1,0 +1,46 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX auxiliary/build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.fff
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.ttt
+*.bbl-SAVE-ERROR
+
+# Keep Stata analysis logs for reproducibility
+!01_raw_data_second_run.log
+!results/stata/logs/
+!results/stata/logs/*.log
+
+# Local biber extraction cache
+tmp_biber/
+
+# Temporary and OS files
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Visual QA screenshots generated during formatting checks
+papers/paper_1/table_check-*.png
+papers/paper_1/table_2_10_11_check-*.png
+
+# Local Stata install placeholder/cache folder
+Stata 17/

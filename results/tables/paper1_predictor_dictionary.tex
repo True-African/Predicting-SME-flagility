@@ -1,0 +1,28 @@
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{1.3cm}>{\RaggedRight\arraybackslash}p{5.3cm}>{\RaggedRight\arraybackslash}p{3.0cm}>{\RaggedRight\arraybackslash}p{4.8cm}}
+\caption{Predictor Dictionary, Coding Direction, and Model Inclusion}
+\label{tab:predictor_dictionary}\\
+\toprule
+Code & Official label and coding direction & Model inclusion & Interpretation notes \\
+\midrule
+\endfirsthead
+\caption[]{Predictor Dictionary, Coding Direction, and Model Inclusion (continued)}\\
+\toprule
+Code & Official label and coding direction & Model inclusion & Interpretation notes \\
+\midrule
+\endhead
+\texttt{a4a} & Industry sampling sector; categorical survey code. & Full model: Yes. Leakage-reduced: Yes. & Low leakage; used to capture industry composition. \\
+\texttt{a6a} & Sampling size; categorical survey size band. & Full model: Yes. Leakage-reduced: Yes. & Low leakage; not the same as \texttt{l1}, which enters the rule. \\
+\texttt{b6} & Full-time employees when establishment started operations; count. & Full model: Yes. Leakage-reduced: Yes. & Employment-history predictor selected in the leakage-reduced model; interpreted as a predictive signal, not a causal effect. \\
+\texttt{c22b} & Establishment has its own website; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: No. & Digital-presence variable used in the outcome rule; high leakage risk in the full model. \\
+\texttt{h1} & New products/services introduced over last 3 years; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: No. & Innovation variable used in the outcome rule; high leakage risk in the full model. \\
+\texttt{h2} & New products/services also new for the establishment's main market; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: No. & Innovation-novelty variable used in the outcome rule; high leakage risk in the full model. \\
+\texttt{h5} & Introduced new/significantly improved process over last 3 years; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: No. & Process-innovation variable used in the outcome rule; high leakage risk in the full model. \\
+\texttt{h8} & Spent on R\&D during last fiscal year; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: Yes. & Low leakage; selected in the leakage-reduced model. \\
+\texttt{k162} & Applied for new loans/lines of credit in last fiscal year; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: Yes. & Credit-demand variable; low leakage and selected in the leakage-reduced model. \\
+\texttt{k33} & Percentage of payments received using e-payments; percentage. & Full model: Yes. Leakage-reduced: Yes. & Digital-finance variable; low leakage and selected in the leakage-reduced model. \\
+\texttt{k3a} & Working capital financed from internal funds/retained earnings; percentage. & Full model: Yes. Leakage-reduced: Yes. & Finance-source variable; low leakage and selected in the leakage-reduced model. \\
+\texttt{k3bc} & Working capital borrowed from banks; percentage. & Full model: Yes. Leakage-reduced: Yes. & Finance-source variable; low leakage and selected in the leakage-reduced model. \\
+\texttt{k82} & Has a line of credit or loan from a financial institution; 1 = Yes, 2 = No. & Full model: Yes. Leakage-reduced: Yes. & Formal-finance variable; low leakage and selected in the leakage-reduced model. \\
+\texttt{l1} & Permanent full-time employees at end of last fiscal year; count. & Full model: No. Leakage-reduced: No. & Rule-only variable in the recovered classification; not submitted as a predictor in the curated file. \\
+\bottomrule
+\end{longtable}

@@ -1,0 +1,11 @@
+Metric,Screening-rule replication,Leakage-reduced benchmark
+ROC-AUC,0.978,0.770
+PR-AUC,0.952,0.428
+Brier score,0.038,0.215
+Accuracy,0.967,0.611
+Precision,0.882,0.279
+Recall,0.938,0.750
+Specificity,0.973,0.581
+ROC-AUC 95% bootstrap CI,"[0.929, 1.000]","[0.649, 0.883]"
+PR-AUC 95% bootstrap CI,"[0.848, 1.000]","[0.231, 0.669]"
+Test observations,90,90

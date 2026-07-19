@@ -1,0 +1,126 @@
+{
+  "dta_shape": [
+    358,
+    355
+  ],
+  "csv_shape": [
+    358,
+    355
+  ],
+  "csv_matches_dta_rows": 1,
+  "csv_matches_dta_columns": 1,
+  "key_variables_present": [
+    "h1",
+    "h2",
+    "h5",
+    "c22b",
+    "l1",
+    "wmedian",
+    "wstrict",
+    "wweak",
+    "a2",
+    "a3a",
+    "a4a",
+    "a6a",
+    "k82",
+    "k162",
+    "k3a",
+    "k3bc",
+    "k33",
+    "b6"
+  ],
+  "value_labels": {
+    "a4a": {
+      "1.0": "Manufacturing",
+      "2.0": "Retail",
+      "3.0": "Other Services"
+    },
+    "a6a": {
+      "1.0": "Small",
+      "2.0": "Medium",
+      "3.0": "Large"
+    },
+    "a2": {
+      "1.0": "Kigali",
+      "2.0": "Western and Northern",
+      "3.0": "Southern and Eastern"
+    },
+    "a3a": {
+      "1.0": "Kigali",
+      "2.0": "Western and Northern",
+      "3.0": "Southern and Eastern"
+    },
+    "c22b": {
+      "1.0": "Yes",
+      "2.0": "No",
+      "-9.0": "Don't know (spontaneous)"
+    },
+    "h1": {
+      "1.0": "Yes",
+      "2.0": "No",
+      "-9.0": "Don't know (spontaneous)"
+    },
+    "h2": {
+      "1.0": "Yes",
+      "2.0": "No",
+      "-9.0": "Don't know (spontaneous)"
+    },
+    "h5": {
+      "1.0": "Yes",
+      "2.0": "No",
+      "-9.0": "Don't know (spontaneous)"
+    }
+  },
+  "variable_labels": {
+    "h1": "New Products/Services Introduced Over Last 3 Yrs",
+    "h2": "New Products/Services Also New For Thr Establishment'S Main Market",
+    "h5": "During Last 3 Yrs, Establishment Introduced New/Significantly Improved Process",
+    "c22b": "Establishment Has Its Own Website",
+    "l1": "Num. Permanent, Full-Time Employees At End of Last Fiscal Year",
+    "wmedian": "Weight according to median eligibility",
+    "wstrict": "Weight according to strict eligibility",
+    "wweak": "Weight according to weak eligibility",
+    "a2": "Sampling Region",
+    "a3a": "Region of The Establishment",
+    "a4a": "Industry Sampling Sector",
+    "a6a": "Sampling Size",
+    "k82": "Establishment Has A Line of Credit or Loan From A Financial Institution?",
+    "k162": "In Last FY, Did Establishment Apply For New Loans/Lines of Credit?",
+    "k3a": "% of Working Capital Financed From Internal Funds/Retained Earnings",
+    "k3bc": "% of Working Capital Borrowed From Banks",
+    "k33": "Percentage of payments received using e-payments",
+    "b6": "Number of Full-Time Employees of The Establishment When It Started Operations"
+  },
+  "fragility_validation": {
+    "n": 358.0,
+    "supplied_fragile": 62.0,
+    "second_run_fragile": 62.0,
+    "matches": 358.0,
+    "mismatches": 0.0,
+    "agreement": 1.0
+  },
+  "lasso_performance": {
+    "accuracy": 0.9666666666666667,
+    "precision": 0.8823529411764706,
+    "recall": 0.9375,
+    "specificity": 0.972972972972973,
+    "roc_auc": 0.9784628378378378,
+    "test_n": 90.0,
+    "test_fragile_n": 16.0
+  },
+  "excluded_rule_variables": [
+    "h1",
+    "h2",
+    "h5",
+    "c22b"
+  ],
+  "leakage_reduced_lasso_performance": {
+    "accuracy": 0.6111111111111112,
+    "precision": 0.27906976744186046,
+    "recall": 0.75,
+    "specificity": 0.581081081081081,
+    "roc_auc": 0.7702702702702703,
+    "test_n": 90.0,
+    "test_fragile_n": 16.0
+  }
+}
