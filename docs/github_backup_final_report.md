@@ -46,6 +46,13 @@ Backup packaging has been prepared locally. The folder was not a Git repository 
 
 Git LFS is installed and configured through `.gitattributes` for `.dta`, `.docx`, `.pdf`, `.png`, `.jpg`, `.jpeg`, and `.xlsx`.
 
+## Validation
+
+- Reusable skill validation passed with `quick_validate.py`.
+- Paper 1 was compiled with `pdflatex`, `biber`, `pdflatex`, and `pdflatex`.
+- The first `biber` run timed out during cache warm-up, then completed successfully on retry.
+- Staged backup set contained 189 files.
+
 ## Sensitivity Finding
 
 No obvious text-file credentials were found. However, the project contains raw and derived firm-level survey data and Word drafts, so the repository should be private.
@@ -56,7 +63,9 @@ Pending. GitHub CLI was not installed, and no remote repository was created in t
 
 ## Commit Hash
 
-Pending until local Git initialization and commit are completed.
+Initial local backup commit: `e50c45a`.
+
+Note: this report may be followed by a documentation-only commit recording the backup result.
 
 ## Recommended Next Step
 
